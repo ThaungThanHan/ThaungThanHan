@@ -117,7 +117,6 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
                     </div>
                 </div>
             </Modal>
-
         </div>
     )
 }
