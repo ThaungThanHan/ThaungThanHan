@@ -120,5 +120,4 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
         </div>
     )
 }
-
 export default WorkInfoModal
