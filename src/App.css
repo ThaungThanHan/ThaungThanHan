@@ -2,3 +2,10 @@
     font-family:"eurostile";
     src:local('eurostile',url(./assets/fonts/EurostileBold.ttf) format("truetype"))
 }
+body{
+    margin:0;padding:0
+}
+
+.App{
+   width:100%;background-color: teal;margin:0
+}

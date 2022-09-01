@@ -1,11 +1,11 @@
 @import "./variables.scss";
 
 .workshowcase_container{
-    display:flex;width:100vw;height:40rem;flex-direction: column;max-width: 100%;margin-top:2rem;
+    display:flex;width:100%;min-height:100%;flex-direction: column;margin-top:2rem;
 }
 
 .works_container{
-    display:flex;width:100rem;height:50rem;align-self: center;align-items:center;
+    display:flex;width:100%;min-height:20rem;align-self: center;align-items:center;
     flex-direction: column;
     &_title{
         font-size: 3.5rem;align-self: center;margin-bottom:0rem;margin-top:0.8rem;color:$primaryColor;font-family:eurostile, sans-serif;
@@ -15,8 +15,8 @@
     }
 }
 .works{
-    width:95rem;height:30rem;flex-direction:row;gap:2rem;flex-wrap:wrap;justify-content: space-around;
-    transition:all .3s;display:flex;margin-top:3rem;
+    width:100%;min-height:30rem;flex-direction:row;gap:2rem;flex-wrap:wrap;justify-content: space-around;
+    transition:all .3s;display:flex;margin-top:3rem;margin-bottom:4rem;
     &_item{
         border:1px solid #eee;width:20rem;height:20rem;box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.1);
         &:hover{
