@@ -20,7 +20,7 @@ const HomePage = () => {
     })
     const customStyles = {
         content:{
-            width:"40%",height:"40%",margin:"0 auto",marginTop:"10%",maxHeight:"30%"
+            width:"40%",height:"30%",margin:"0 auto",marginTop:"10%",maxHeight:"30%"
         }
     }
     const sendEmail = (event) => {

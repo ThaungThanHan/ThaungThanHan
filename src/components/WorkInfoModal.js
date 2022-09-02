@@ -6,8 +6,8 @@ import "./styles/WorkInfoModal.scss";
 const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
     const customStyles = {
         content:{
-            width:"21rem",height:"40rem",margin:"0 auto",padding:"1rem",display:'flex',
-            marginTop:"2rem",
+            width:"40%",height:"40%",margin:"0 auto",paddingBottom:"1rem",display:'flex',
+            marginTop:"2rem"
     }
 }
     const [videodemoenabled,setVideoDemoEnabled] = useState({
@@ -99,7 +99,7 @@ const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
                         <li className="list-item">Build a react-native app where users can track famous coins such as BTC, ETH, SOL, BNB and USDT using CoinLore API.</li>
                         <li className="list-item">The app designed to showcase API integration and redux methods.</li>
                     </ul></> :
-                    <ReactPlayer style={{marginBottom:"2rem",marginTop:"1rem"}} controls="true" width="20rem" height="25rem" url={coinVideo} /> }
+                    <ReactPlayer style={{marginBottom:"2rem",marginTop:"1rem"}} controls="true" width="100%" height="50%" url={coinVideo} /> }
                     <div className="buttons_container">
                        {!videodemoenabled.watchthecoins ?
                         <div onClick={()=>setVideoDemoEnabled({...videodemoenabled,watchthecoins:true})} className="modal_button">
