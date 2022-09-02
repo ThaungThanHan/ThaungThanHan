@@ -12,9 +12,6 @@ const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
             width:"20rem",height:"20rem",margin:"0 auto",marginTop:"5rem"
         }
     }
-    const handleOnchange = (e) => {
-        console.log("chabef")
-    }
     return( 
         <div id="heropage" className="Hero_Container">
             <div className="Hero_Header">
