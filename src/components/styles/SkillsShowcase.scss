@@ -9,7 +9,8 @@
     }
 }
 .showcase_grid{
-    min-height:20rem;padding:2rem;display:flex;flex-direction: row;justify-content: space-around;
+    min-height:20rem;padding:2rem;display:flex;flex-direction: row;max-width:100%;align-self: center;
+    align-items: center;justify-content: center;
 }
 .skill_item{
     border:1px solid #eee;width:100%;min-height:30rem;display:flex;box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.05);border-radius: 0.8rem;

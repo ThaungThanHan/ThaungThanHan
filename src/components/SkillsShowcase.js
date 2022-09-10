@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./styles/SkillsShowcase.scss"
 import HTML from "../assets/images/html5.png"
 import css from "../assets/images/css.png"
@@ -13,13 +13,28 @@ import laravel from "../assets/images/laravel.png"
 import firebase from "../assets/images/firebase.png"
 import docker from "../assets/images/docker.png"
 import design from "../assets/images/design.png"
-
+import {motion} from "framer-motion"
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
 import SkillsCards from "./SkillsCards";
 const SkillsShowcase = () => {
+    const {ref,inView} = useInView();
+    const SkillShowcaseAnimation = useAnimation()
+    useEffect(()=>{
+        if(inView){
+            SkillShowcaseAnimation.start({
+                opacity:1,x:0,transition:{duration:0.5,delay:0.5,ease:"easeInOut"}
+            })
+        }else{
+            SkillShowcaseAnimation.start({
+                opacity:0,x:-1000
+            })
+        }
+    },[inView])
     return(
-        <div className="showcase_container">
-            <h3 className="showcase_container_title">My skills</h3>
-            <div className="showcase_grid">
+        <motion.div ref={ref}className="showcase_container">
+            <motion.h3 animate={SkillShowcaseAnimation} className="showcase_container_title">My skills</motion.h3>
+            <motion.div animate={SkillShowcaseAnimation} className="showcase_grid">
                 <div className="skill_item">
                     <p className="skill_item_title">Programming Languages</p>
                     <div className="skill_item_skills">
@@ -58,8 +73,8 @@ const SkillsShowcase = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 
