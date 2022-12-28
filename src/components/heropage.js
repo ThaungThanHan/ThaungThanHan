@@ -35,7 +35,7 @@ const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
                 <div className="Hero_Body_first">
                     <p className="Hero_Body_text">Hello, I am<p className="Hero_Body_Name">&nbsp; Thaung Than Han</p></p>
                 </div>
-                <p className="Hero_Body_secondtext">I'm a frontend web developer</p>
+                <p className="Hero_Body_secondtext">a frontend developer</p>
                 <Link   
                 activeClass="active"
                 to="description"

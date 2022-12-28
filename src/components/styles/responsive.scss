@@ -1,57 +1,57 @@
-@import "variables.scss";
+// @import "variables.scss";
 
-@media screen and (min-width:576px){
-    .App{
-        width:97rem;
-     };
-     .Hero_Container{
-         height:100vh;background-color: $darkColor;width:100%;
-     } 
-}
-@media screen and (min-width:200px){
-    .App{
-       width:59.1rem;
-    };
-    .Hero_Container{
-        height:100vh;background-color: $darkColor;width:100%;
-    }    
-    .works{
-        width:50rem;
-    }   
-    .sayHi_formcontainer{
-        width:100%;
-    }
-}
-@media screen and (min-width:300px){
-    .App{
-       width:78rem;
-    };
-    .Hero_Container{
-        width:100%;
-    }    
-}
+// @media screen and (min-width:576px){
+//     .App{
+//         width:97rem;
+//      };
+//      .Hero_Container{
+//          height:100vh;background-color: $darkColor;width:100%;
+//      } 
+// }
+// @media screen and (min-width:200px){
+//     .App{
+//        width:59.1rem;
+//     };
+//     .Hero_Container{
+//         height:100vh;background-color: $darkColor;width:100%;
+//     }    
+//     .works{
+//         width:50rem;
+//     }   
+//     .sayHi_formcontainer{
+//         width:100%;
+//     }
+// }
+// @media screen and (min-width:300px){
+//     .App{
+//        width:78rem;
+//     };
+//     .Hero_Container{
+//         width:100%;
+//     }    
+// }
 
-@media screen and (min-width:900px){
-    .App{
-        width:97rem;
-     };
-     .Hero_Container{
-         height:100vh;background-color: $darkColor;width:100%;
-     }    
-}
-@media screen and (min-width:1300px){
-    .App{
-        width:97rem;
-     };
-     .Hero_Container{
-         height:100vh;background-color: $darkColor;width:100%;
-     }    
-}
-@media screen and (min-width:1600px){
-    .App{
-        min-width:100%;
-     };
-     .Hero_Container{
-         height:100vh;background-color: $darkColor;width:100%;
-     }    
-}
+// @media screen and (min-width:900px){
+//     .App{
+//         width:97rem;
+//      };
+//      .Hero_Container{
+//          height:100vh;background-color: $darkColor;width:100%;
+//      }    
+// }
+// // @media screen and (min-width:1300px){
+// //     .App{
+// //         width:97rem;
+// //      };
+// //      .Hero_Container{
+// //          height:100vh;background-color: $darkColor;width:100%;
+// //      }    
+// // }
+// @media screen and (min-width:1600px){
+//     .App{
+//         width:100vw;max-width:100%
+//      };
+//      .Hero_Container{
+//          height:100vh;background-color: $darkColor;max-width:100%;
+//      }    
+// }
