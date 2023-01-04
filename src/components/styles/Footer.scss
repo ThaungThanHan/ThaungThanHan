@@ -49,3 +49,22 @@
         }
     }
 }
+
+@media screen and (max-width:420px) {
+    .up-icon-container{
+        width:4rem;height:4rem;margin-left:9.3rem;
+    }
+    .socialmedia_container{
+        justify-content: space-between;
+        margin-left:.5rem
+    }
+    .contact-me-text{
+        font-size:.5rem;margin-top: 2rem;align-self: center;
+    }
+    .contact-me-sayhi{
+        width:7rem;height:2rem;margin-left:0rem;
+        &_text{
+            font-size:.6rem
+        };
+    }
+}

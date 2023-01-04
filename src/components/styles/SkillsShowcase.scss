@@ -38,27 +38,21 @@
         width:100%;flex-direction: column;
     }
     .showcase_container{
-        width:100%;max-height:70rem;display:flex;align-self: center;flex-direction: column;
-        margin-top:-11rem;background-color: white;border-radius: 0.8rem;border:1px solid #eee;
-        box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.18);
+        width:100%;max-height:70rem;flex-direction: column;
         &_title{
-            color:white;font-size: 2rem;align-self: center;color:$primaryColor;font-family:eurostile, sans-serif;
+            font-size: 2rem;
         }
     }
     .skill_item{
-        border:1px solid #eee;width:20rem;min-height:20rem;margin-bottom:1rem;
+        width:20rem;min-height:20rem;margin-bottom:1rem;
         &_title{
-            font-size: 1rem;align-self: center;margin-bottom:1rem;margin-top:0.5rem;font-family:eurostile, sans-serif;
-        }
-        &_skills{
-            overflow:hidden;padding:0rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center;justify-content:center;
+            font-size: 1rem
         }
     }
     .skill_item_right{
         width:100%;height:35rem;flex-direction:row;justify-content:space-around;
         &_rightcards{
-            border:1px solid #eee;width:10rem;height:15rem;display:flex;box-shadow: 7px 10px 16px 0px rgba(0,0,0,0.05);
-        padding-bottom: 0;border-radius: 0.8rem;
+        width:10rem;height:15rem;
         flex-direction: column;
         }
     }
