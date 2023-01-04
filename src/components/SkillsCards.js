@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/SkillsCards.scss"
+import "./styles/responsive.scss"
 const SkillsCards = ({lngtext,image,text}) =>{
     console.log(text)
     return(

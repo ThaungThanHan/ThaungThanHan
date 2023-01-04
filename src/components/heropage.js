@@ -6,6 +6,7 @@ import hanlogo from "../assets/images/hanlogo.png";
 import {Link, animateScroll as scroll} from "react-scroll";
 import Modal from 'react-modal';
 import { motion } from "framer-motion";
+import "./styles/responsive.scss"
 
 const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
     const customStyles = {

@@ -11,3 +11,19 @@
         font-size:1.5rem;font-family:eurostile, sans-serif;
     }
 }
+
+
+@media screen and (max-width:420px) {
+    .skill_item_skills_imgcontainer{
+        width:5.5rem;height:4rem;padding-top:.5rem;
+        &_text{
+            margin-bottom:-1rem;margin-top:0rem;align-self: center;font-family:eurostile, sans-serif;
+        }
+        &_image{
+            width:2rem;height:42em;margin-bottom:-1rem;
+        }   
+        &_imagetitle{
+            font-size:1rem;font-family:eurostile, sans-serif;
+        }
+    }
+}

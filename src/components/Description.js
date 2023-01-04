@@ -1,9 +1,11 @@
 import React,{useEffect} from "react";
 import "./styles/description.scss";
+import "./styles/responsive.scss"
 import Thaung from "../assets/images/thaung.jpg"
 import {motion} from "framer-motion"
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+
 const Description = () => {
     const {ref,inView} = useInView();
     const DescAnimation = useAnimation()
@@ -17,7 +19,7 @@ const Description = () => {
                 opacity:0,x:-1000
             })
         }
-    },[inView])
+    },[inView,DescAnimation])
     return(
         <motion.div  ref={ref} id="description" className="desc_container">
             <motion.img animate={DescAnimation} src={Thaung} className="my_pic" />
