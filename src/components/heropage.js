@@ -11,7 +11,7 @@ import "./styles/responsive.scss"
 const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
     const customStyles = {
         content:{
-            width:"20rem",height:"20rem",margin:"0 auto",marginTop:"5rem"
+            width:"100rem",height:"20rem",margin:"0 auto",marginTop:"5rem"
         }
     }
     const opacityVariant = {

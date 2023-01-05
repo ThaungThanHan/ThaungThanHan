@@ -6,8 +6,8 @@ import "./styles/WorkInfoModal.scss";
 const WorkInfoModal = ({isModalOpen,onPressClose,images}) => {
     const customStyles = {
         content:{
-            width:"40%",height:"40%",margin:"0 auto",paddingBottom:"1rem",display:'flex',
-            marginTop:"2rem"
+            maxWidth:"50%",minHeight:"10%",maxHeight:"70%",margin:"0 auto",paddingBottom:"1rem",display:'flex',
+            marginTop:"-1rem"
     }
 }
     const [videodemoenabled,setVideoDemoEnabled] = useState({
