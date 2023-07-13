@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+.TechStacks_container{
+    width:100%;height:100vh * 1.5;background-color:pink;display:flex;
+    background-image: url("../../assets/images/spacewall.jpg");background-repeat: no-repeat;
+    background-size:cover;background-color: #cccccc;
+    flex-direction: row;align-items: center;text-align: center;
+    justify-content: center;opacity:.88;
+}
+.title{
+    color:white;font-size:4rem;
+}
+.rocket_pic{
+    width:10rem;height:10rem;
+}

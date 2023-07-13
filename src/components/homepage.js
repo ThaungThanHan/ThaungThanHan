@@ -3,6 +3,7 @@ import "./styles/homepage.scss"
 import "./styles/hero.scss"
 import HeroPage from "./heropage";
 import Description from "./Description";
+import TechStacks from "./TechStacks";
 import SkillsShowcase from "./SkillsShowcase";
 import WorkShowcase from "./WorkShowcase";
 import Footer from "./Footer";
@@ -41,6 +42,7 @@ const HomePage = () => {
         <div className="homepage">
             <HeroPage setParams={setParams} params={params} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             <Description/>
+            <TechStacks/>
             {/* <SkillsShowcase />
             <WorkShowcase/> */}
             {/* <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/> */}
