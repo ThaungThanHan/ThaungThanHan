@@ -5,6 +5,9 @@ import Thaung from "../assets/images/thaung.jpg"
 import {motion} from "framer-motion"
 import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
+import {Link, animateScroll as scroll} from "react-scroll";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 const Description = () => {
     const {ref,inView} = useInView({
@@ -50,7 +53,28 @@ const Description = () => {
                 }} 
                  src={Thaung} className="my_pic" />
             </motion.div>
+            <Link   
+                activeClass="active"
+                to="TechStacks"
+                spy={true}
+                smooth={true}
+                offset={300}
+                duration={200}
+                >
+                    <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }}
+                    transition={{ duration: 0.5 }} variants={{
+                    visible: {opacity:1,y:0,transition:{
+                        duration:0.5,delay:1,ease:"easeInOut"
+                    }},
+                    hidden: {opacity:0,y:100}
+                    }} style={{marginTop:"4rem"}} className="Btn_Gettoknow">
+                        <p className="Btn_Gettoknow_text">Check out tools</p>
+                        <AiOutlineArrowRight className="right_arrow" />
+                        <AiOutlineArrowDown className="down_arrow" />
+                    </motion.div>
+            </Link>
         </motion.div>
+
     )
 }
 

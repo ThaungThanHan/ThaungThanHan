@@ -43,7 +43,7 @@ const HeroPage = ({isModalOpen,setParams,params,setIsModalOpen}) => {
                 spy={true}
                 smooth={true}
                 offset={120}
-                duration={500}
+                duration={200}
                 >
                     <div className="Btn_Gettoknow">
                         <p className="Btn_Gettoknow_text">Get to know me</p>
