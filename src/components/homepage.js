@@ -41,9 +41,9 @@ const HomePage = () => {
         <div className="homepage">
             <HeroPage setParams={setParams} params={params} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             <Description/>
-            <SkillsShowcase />
-            <WorkShowcase/>
-            <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
+            {/* <SkillsShowcase />
+            <WorkShowcase/> */}
+            {/* <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/> */}
             <Modal ariaHideApp={false} style={customStyles} isOpen={isModalOpen}>
                 <form ref={form} onSubmit={sendEmail} className="sayHi_formcontainer">
                     <p className="sayHi_formlabel">Name</p>
