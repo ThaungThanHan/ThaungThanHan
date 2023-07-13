@@ -1,16 +1,21 @@
 @import "variables.scss";
 
 .desc_container{
-    width:100%;min-height:80rem;background-color:$primaryColor;display:flex;
-    justify-content: center;flex-direction: column;
+    width:100%;height:100vh;background-color:#1b242f;display:flex;
+    flex-direction: row;align-items: center;text-align: center;
+    justify-content: center;margin:0;
 }
-
+.desc_items_container{
+    display:flex;width:40rem;justify-content: space-between;margin:0
+}
 .desc_text{
-    font-size:2.5rem;max-width: 80rem;min-height:30rem;align-self: center;color:white;font-family:eurostile, sans-serif
+    font-size:1rem;height:20rem;margin:0;
+    color:white;font-family:eurostile, sans-serif;align-items: flex-start;text-align: left;
 }
 
 .my_pic{
-    width:15rem;height:15rem;align-self: center;border-radius: 20rem;
+    width:20rem;height:20rem;align-self: center;
+    border-radius:.5rem;box-shadow: 10px 10px 86px -19px rgba(146, 144, 144, 0.75);
 } 
 
 @media screen and (max-width:420px) {
@@ -20,4 +25,12 @@
     .desc_text{
         font-size:1.2rem;width:20rem;min-height:30rem;align-self: center;color:white;font-family:eurostile, sans-serif
     }
+}
+
+.desc_title{
+    font-size:1.5rem;font-weight:bold;color:$primaryColor;padding:0;margin:0;
+    letter-spacing:.1rem;
+}
+.desc_paragraph{
+    color:white;max-width:15rem;text-align:left;
 }

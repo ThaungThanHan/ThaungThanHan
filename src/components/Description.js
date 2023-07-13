@@ -7,9 +7,12 @@ import { useInView } from "react-intersection-observer";
 import { useAnimation } from "framer-motion";
 
 const Description = () => {
-    const {ref,inView} = useInView();
+    const {ref,inView} = useInView({
+        margin: "0px 100px -50px 0px"
+      })
     const DescAnimation = useAnimation()
     useEffect(()=>{
+        console.log(inView);
         if(inView){
             DescAnimation.start({
                 opacity:1,x:0,transition:{duration:0.5,delay:0.5,ease:"easeInOut"}
@@ -21,13 +24,32 @@ const Description = () => {
         }
     },[inView,DescAnimation])
     return(
-        <motion.div  ref={ref} id="description" className="desc_container">
-            <motion.img animate={DescAnimation} src={Thaung} className="my_pic" />
-            <motion.p animate={DescAnimation} className="desc_text">
-                As a hardworking and ambitious individual, I have been working remotely for startups and businesses which need their products
-                to be developed with optimized code and extensive care.<br/><br/>
-                The ability to tinker for long hours of coding and creative thinking has helped me stand out as a professional web artisan.
-            </motion.p>
+        <motion.div initial="visible" id="description" className="desc_container">
+            <motion.div initial="visible" className="desc_items_container">
+                <motion.p initial="hidden" whileInView="visible" viewport={{ once: true }}
+                transition={{ duration: 0.5 }} variants={{
+                visible: {            opacity:1,x:0,transition:{
+                    duration:1,delay:0.5,ease:"easeInOut"
+                }},
+                hidden: {opacity:0,x:-100}
+                }} 
+                  className="desc_text">
+                    <h3 className="desc_title">A little bit<br/>about me</h3>
+                    <p className="desc_paragraph">
+                    When I say "chilling", I mean about building fun stuffs with code. That's what I believe in, "doing what we love is just comfortable and cozy".<br/><br/>               
+                    Javascript is my go-to language with which I am comfortable buidling different kinds of web applications.
+                    Using tools like ReactJS and NodeJS, I can develop both the aesthetics and skeleton of web applications. 
+                    </p>
+                </motion.p>
+                <motion.img initial="hidden" whileInView="visible" viewport={{ once: true }}
+                transition={{ duration: 0.5 }} variants={{
+                visible: {opacity:1,x:0,transition:{
+                    duration:1,delay:0.5,ease:"easeInOut"
+                }},
+                hidden: {opacity:0,x:100}
+                }} 
+                 src={Thaung} className="my_pic" />
+            </motion.div>
         </motion.div>
     )
 }
