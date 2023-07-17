@@ -4,6 +4,7 @@ import "./styles/hero.scss"
 import HeroPage from "./heropage";
 import Description from "./Description";
 import TechStacks from "./TechStacks";
+import MyWork from "./MyWork";
 import SkillsShowcase from "./SkillsShowcase";
 import WorkShowcase from "./WorkShowcase";
 import Footer from "./Footer";
@@ -43,8 +44,9 @@ const HomePage = () => {
             <HeroPage setParams={setParams} params={params} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
             <Description/>
             <TechStacks/>
-            {/* <SkillsShowcase />
-            <WorkShowcase/> */}
+            <MyWork/>
+            {/* <SkillsShowcase /> */}
+            {/* <WorkShowcase/> */}
             {/* <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/> */}
             <Modal ariaHideApp={false} style={customStyles} isOpen={isModalOpen}>
                 <form ref={form} onSubmit={sendEmail} className="sayHi_formcontainer">

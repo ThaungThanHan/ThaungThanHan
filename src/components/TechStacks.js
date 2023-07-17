@@ -26,7 +26,7 @@ const TechStacks = () => {
                     duration:1,delay:0.5,ease:"easeInOut"
                 }},
                 hidden: {opacity:0,x:-50,y:-50}
-                }} 
+                }}
                  src={reactrocket} style={{position:"absolute",marginLeft:"-60rem",marginBottom:"-50rem"}} 
                  className="rocket_pic" />
 
