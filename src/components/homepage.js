@@ -27,7 +27,8 @@ const HomePage = () => {
     }
     const sendEmail = (event) => {
         event.preventDefault();
-        emailjs.sendForm(email_key.SERVICE_ID,email_key.TEMPLATE_ID,form.current,email_key.PUBLIC_KEY,)
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,form.current,process.env.REACT_APP_PUBLIC_KEY,)
         .then(res=>{
             console.log(res.text);
         }).catch(e=>{
@@ -47,7 +48,7 @@ const HomePage = () => {
             <MyWork/>
             {/* <SkillsShowcase /> */}
             {/* <WorkShowcase/> */}
-            {/* <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/> */}
+            <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
             <Modal ariaHideApp={false} style={customStyles} isOpen={isModalOpen}>
                 <form ref={form} onSubmit={sendEmail} className="sayHi_formcontainer">
                     <p className="sayHi_formlabel">Name</p>

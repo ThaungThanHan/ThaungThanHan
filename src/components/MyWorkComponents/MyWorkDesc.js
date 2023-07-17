@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/MyWork.scss";
 import {motion,AnimatePresence } from "framer-motion";
 
-const MyWorkDesc = ({title,desc,image}) => {
+const MyWorkDesc = ({title,desc,image,demoLink,githubLink}) => {
 
     return(
         <div style={{display:"flex",flexDirection:"row"}}>
@@ -13,12 +13,21 @@ const MyWorkDesc = ({title,desc,image}) => {
                     {desc}
                 </p>
                 <div className="work_desc_buttons">
+                    <a style={{textDecoration:"none"}}
+                     target="_blank" href={demoLink}>
                     <div className="work_desc_buttons_btn">
                         <p>View Demo</p>
                     </div>
+                    </a>
+                    <a style={{textDecoration:"none"}}
+                     target="_blank" href={githubLink}>
                     <div className="work_desc_buttons_btn">
-                        <p>View Walkthrough</p>
+                        <p>View Repository</p>
                     </div>
+                    </a>
+                    {/* <div className="work_desc_buttons_btn">
+                        <p>View Walkthrough</p>
+                    </div> */}
                 </div>
             </div>
         </div>
