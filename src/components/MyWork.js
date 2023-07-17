@@ -43,9 +43,10 @@ const MyWork = () => {
             transition={{ duration:.3 }}
           >
         <MyWorkDesc title={currentProject} image={VotingApp}
-        desc="If you want the line breaks to occur at the same point for all lines, you can use the CSS property overflow-wrap: break-word; instead of word-wrap: break-word;.
-        The overflow-wrap property ensures that the line breaks happen at the same point, maintaining consistent wrapping behavior.
-        Here's an updated example:" 
+        demoLink="https://hanvotingapp.vercel.app/" githubLink="https://github.com/ThaungThanHan/votingserver"
+        desc="Demo web app written in MERN stack for training purpose. 
+        This app features user authorization, real-time operations as well as fool-proof voting mechanism which allows users to create a private voting rooms and invite people to cast an unique vote.
+        This project serves as a demonstration for my abilities as a full-stack JavaScript developer." 
         /> </motion.div>
         }</AnimatePresence>
 
@@ -61,9 +62,9 @@ const MyWork = () => {
             transition={{ duration: 0.3 }}
             >
         <MyWorkDesc title={currentProject} image={MovieDB}
-        desc="If you want the line breaks to occur at the same point for all lines, you can use the CSS property overflow-wrap: break-word; instead of word-wrap: break-word;.
-        The overflow-wrap property ensures that the line breaks happen at the same point, maintaining consistent wrapping behavior.
-        Here's an updated example:" 
+        demoLink="https://thaungthanhan.github.io/moviedb/" githubLink="https://github.com/ThaungThanHan/moviedb"
+        desc="This project brings back fond memories for me because it was my very first demo application in ReactJS that used the MovieDB api. 
+        I built this project to showcase my skills in API integration in ReactJS applications. " 
         /></motion.div> }
         </AnimatePresence>
         {/* {currentProject == "WatchTheCoins" &&
