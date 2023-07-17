@@ -27,8 +27,7 @@ const HomePage = () => {
     }
     const sendEmail = (event) => {
         event.preventDefault();
-        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,form.current,process.env.REACT_APP_PUBLIC_KEY,)
+        emailjs.sendForm(email_key.SERVICE_ID,email_key.TEMPLATE_ID,form.current,email_key.PUBLIC_KEY,)
         .then(res=>{
             console.log(res.text);
         }).catch(e=>{
