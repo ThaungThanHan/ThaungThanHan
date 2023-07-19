@@ -16,3 +16,9 @@
         opacity: 0;
     }
 }
+
+@media screen and (max-width:$sm) {
+    .TechStacks_container{
+        display: none;
+    }
+}

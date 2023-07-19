@@ -50,21 +50,27 @@
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:$sm) {
+    .footer-container{
+        width:100vw;align-items: center;justify-content: center;
+    }
+    .footer-body{
+        width:100%;align-items: center;justify-content: center;
+    }
     .up-icon-container{
-        width:4rem;height:4rem;
+        margin-right:2rem;margin-top: -10rem;margin-left:9.3rem
     }
     .socialmedia_container{
-        justify-content: space-between;
-        
+        align-self:center;justify-content:space-between;
+        width:20rem;padding-right:2rem;
     }
-    // .contact-me-text{
-    //     font-size:.5rem;margin-top: 2rem;align-self: center;
-    // }
-    // .contact-me-sayhi{
-    //     width:7rem;height:2rem;margin-left:0rem;
-    //     &_text{
-    //         font-size:.6rem
-    //     };
-    // }
+    .contact-me-text{
+        display:none;
+    }
+    .contact-me-sayhi{
+        width:10rem;height:4rem;margin-left:1rem;margin-top:1rem;
+        &_text{
+            font-size:1rem
+        };
+    }
 }

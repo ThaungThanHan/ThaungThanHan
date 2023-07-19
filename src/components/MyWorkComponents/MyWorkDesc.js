@@ -5,7 +5,7 @@ import {motion,AnimatePresence } from "framer-motion";
 const MyWorkDesc = ({title,desc,image,demoLink,githubLink}) => {
 
     return(
-        <div style={{display:"flex",flexDirection:"row"}}>
+        <div className="work_desc_img_container">
         <div>
             <div className="work_desc_container">
                 <h3 className="work_desc_title">{title}</h3>

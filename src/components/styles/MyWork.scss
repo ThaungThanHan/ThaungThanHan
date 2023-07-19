@@ -3,10 +3,13 @@
 .MyWork_container{
     background-color: $darkColor;
     height:100vh * 2;width:100vw;
-    display:flex;flex-direction: row;justify-content: center;align-items: center;
+    display:flex;flex-direction: row;align-items: center;justify-content: center;
 }
 .MyWork_title{
     color:white;font-size:4rem; 
+}
+.work_desc_img_container{
+    display:flex;flex-direction: row;
 }
 
 // WORK DESC
@@ -52,8 +55,8 @@
     font-size:1.5rem;color:#E6ECF8;margin:0;
 }
 .work_select_box{
-    border-left:1px solid $primaryColor;border-width:.2rem;margin-left:1.5rem;margin-top:.5rem;
-    height:17.8rem;padding-left:1rem;
+    border-left:1px solid $primaryColor;border-width:.2rem;margin-top:.5rem;
+    height:17.8rem;align-self: center;padding-left: 1rem;
 }
 .work_select_text{
     transition:all .5s;margin-bottom:1rem;
@@ -72,7 +75,38 @@
 
 @media screen and (max-width:$sm) {
     .MyWork_container{
-        width:100%;
+        width:100%;height:100rem;flex-direction: column-reverse;
+    }
+    .work_desc_container{
+        border-left:none;font-size: 1rem;margin-top: -10rem;margin-bottom: 1rem;
+        height:auto;flex-direction: column;
+    }
+    .work_desc_buttons{
+        justify-content: space-between;width:80%;align-self: center;
+    }
+    .work_desc_title{
+        font-size:1.2rem;align-self: center;
+    }
+    .work_desc_paragraph{
+       width:22rem;height:auto;font-size:1rem;align-self: center;
+       margin-top:10rem;margin-top: 1rem;
+    }
+    .work_select_box{
+        border-left:none;border-bottom: 1px solid $primaryColor;
+        display:flex;flex-direction: row;height:5rem;
+        justify-content: space-around;
+    }
+    .work_select_title{
+        align-self: center;font-size:1rem;
+    }
+    .work_select_projectTitle{
+        font-size: 1rem;
+    }
+    .work_desc_img_container{
+        display:flex;flex-direction: column;justify-content: space-between;
+    }
+    .work_image{
+        width:20rem;height:18rem;align-self: center;
     }
 }
 
@@ -80,4 +114,5 @@
     .MyWork_container{
         width:100%;
     }
+
 }

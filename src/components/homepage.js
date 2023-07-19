@@ -22,7 +22,8 @@ const HomePage = () => {
     })
     const customStyles = {
         content:{
-            width:"50%",height:"40%",margin:"0 auto",marginTop:"5%",maxHeight:"60%",minHeight:"20%",borderRadius:40
+            width:"60%",height:"55%",margin:"0 auto",
+            marginTop:"5%",maxHeight:"60%",minHeight:"20%",borderRadius:20
         }
     }
     const sendEmail = (event) => {
@@ -45,8 +46,6 @@ const HomePage = () => {
             <Description/>
             <TechStacks/>
             <MyWork/>
-            {/* <SkillsShowcase /> */}
-            {/* <WorkShowcase/> */}
             <Footer isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}/>
             <Modal ariaHideApp={false} style={customStyles} isOpen={isModalOpen}>
                 <form ref={form} onSubmit={sendEmail} className="sayHi_formcontainer">

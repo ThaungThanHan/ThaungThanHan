@@ -34,3 +34,21 @@
 .desc_paragraph{
     color:white;max-width:15rem;text-align:left;
 }
+
+@media screen and (max-width:$sm) {
+    .desc_items_container{
+        width:20rem;flex-direction: column;justify-content:center;align-items: center;
+    }
+    .desc_container{
+        align-items: center;height:60rem;
+    }
+    .desc_text{
+        text-align: center;font-size:1.4rem;font-size: 1rem;
+    }
+    .desc_paragraph{
+        text-align: center;margin:0 auto;margin-top: 1rem;
+    }
+    .my_pic{
+        width:12rem;height:12rem;margin-top:-9rem
+    }
+}

@@ -9,7 +9,7 @@ html, body {
 
 @media screen and (max-width:576px) {
     html, body{
-        width:60rem;
+        max-width:100%;overflow: scroll;height:auto;
     }
 }
 @media screen and (max-width:768px) {
