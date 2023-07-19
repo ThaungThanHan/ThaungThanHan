@@ -68,3 +68,16 @@
     color:#E6ECF8;font-weight: bold;display:inline-block;
     border-bottom:1px solid $primaryColor;border-width:.2rem;transition: all .5s;
 }
+
+
+@media screen and (max-width:$sm) {
+    .MyWork_container{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:$lg) {
+    .MyWork_container{
+        width:100%;
+    }
+}
