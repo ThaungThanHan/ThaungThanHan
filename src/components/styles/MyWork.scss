@@ -73,7 +73,7 @@
 }
 
 
-@media screen and (max-width:$sm) {
+@media screen and (max-width:$lg) {
     .MyWork_container{
         width:100%;height:100rem;flex-direction: column-reverse;
     }
@@ -97,7 +97,7 @@
         justify-content: space-around;
     }
     .work_select_title{
-        align-self: center;font-size:1rem;
+        font-size:1rem;text-align: center;
     }
     .work_select_projectTitle{
         font-size: 1rem;
@@ -108,11 +108,4 @@
     .work_image{
         width:20rem;height:18rem;align-self: center;
     }
-}
-
-@media screen and (max-width:$lg) {
-    .MyWork_container{
-        width:100%;
-    }
-
 }

@@ -18,15 +18,6 @@
     border-radius:.5rem;box-shadow: 10px 10px 86px -19px rgba(146, 144, 144, 0.75);
 } 
 
-@media screen and (max-width:420px) {
-    .my_pic{
-        width:10rem;height:10rem
-    } 
-    .desc_text{
-        font-size:1.2rem;width:20rem;min-height:30rem;align-self: center;color:white;font-family:eurostile, sans-serif
-    }
-}
-
 .desc_title{
     font-size:1.5rem;font-weight:bold;color:$primaryColor;padding:0;margin:0;
     letter-spacing:.1rem;
@@ -35,7 +26,7 @@
     color:white;max-width:15rem;text-align:left;
 }
 
-@media screen and (max-width:$sm) {
+@media screen and (max-width:$lg) {
     .desc_items_container{
         width:20rem;flex-direction: column;justify-content:center;align-items: center;
     }
@@ -49,6 +40,6 @@
         text-align: center;margin:0 auto;margin-top: 1rem;
     }
     .my_pic{
-        width:12rem;height:12rem;margin-top:-9rem
+        width:12rem;height:12rem;margin-top:1rem
     }
 }
