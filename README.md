@@ -1,6 +1,6 @@
 ### Good Day! <a href="https://www.gautamkrishnar.com/](https://thaungthanhan.github.io/hanportfolio/"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGx1dXZ0bHozdnNlbTVwbzRvYmpqZXg5cG1rMXZxejVxOGtjem53cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ES4Vcv8zWfIt2/giphy.gif" width="8%"></a>
 
-<p>Welcome! </br> I am Thaung Than Han, fullstack JavaScript developer, living in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/> I love to spend hours on solving puzzles and making my brain sweat. That's why I am here to contribute in open source projects.</p>
+<p>Welcome! </br> I am Thaung Than Han, fullstack developer, living in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/> I love to spend hours on solving puzzles and making my brain sweat. That's why I am here to contribute in open source projects.</p>
 
 ### 📌 &nbsp;**Top Repositories**
 I have built tons of demo projects for training purposes and the ones below are my favorites - 
