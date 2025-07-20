@@ -1,11 +1,10 @@
 "use client"
 
 import { useState } from "react"
-import { ExternalLink, Github, Eye } from "lucide-react"
+import { ExternalLink, Github, Eye, LockIcon } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-
 const projects = [
   {
     id: 1,
@@ -13,11 +12,12 @@ const projects = [
     description: "Real-time voting platform where users can host or join rooms and cast votes securely.",
     longDescription:
       "A fullstack voting application built in my free time to sharpen skills in modern web development. Users can create voting rooms, join via unique room codes, and vote once per session. Built using Next.js, TypeScript, and PostgreSQL, with real-time updates and responsive design. Includes user authentication and session control to ensure fair voting.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/voting_app.png",
     tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind", "Socket.io"],
     github: "#",
     demo: "https://hanvotingapp.vercel.app/",
     featured: true,
+    isPrivate: false
   },
   {
     id: 2,
@@ -25,12 +25,13 @@ const projects = [
     description: "Fullstack development for a multilingual support platform serving foreign workers in Japan.",
     longDescription:
       "Worked on both frontend and backend development for JP-MIRAI, a government-supported web platform that provides guidance and resources to foreign workers in Japan. Contributed to building and maintaining the Admin Dashboard and User Portal. Responsibilities included implementing multilingual UI components, integrating backend APIs, resolving bugs, and enhancing overall platform performance and accessibility. Actively participated in ongoing feature development, maintenance, and cross-team collaboration to ensure a stable and inclusive digital experience.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/jpmirai.png",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "Figma", "i18n", "REST API"],
     github: "#",
     demo: "https://portal.jp-mirai.org/en",
     featured: false,
-    isContribution: true
+    isContribution: true,
+    isPrivate: false
   },
   {
     id: 3,
@@ -38,12 +39,13 @@ const projects = [
     description: "Full-featured learning management system with video lessons, quizzes, and multi-role dashboards.",
     longDescription:
       "Contributed to the development of 'One Japanese', an internal Learning Management System (LMS) designed to facilitate language learning through video lessons and interactive quizzes. The platform includes dedicated dashboards for students, organizations, and managers, each with tailored functionality. Worked across both frontend and backend to implement user interfaces, manage course content, and build features for tracking progress, managing users, and maintaining system stability.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/oneterrace.webp",
     tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "LMS", "REST API"],
     github: "#",
     demo: "Private/Internal",
     featured: false,
-    isContribution: true
+    isContribution: true,
+    isPrivate: true
   },
   {
     id: 4,
@@ -51,12 +53,13 @@ const projects = [
     description: "Corporate recruitment site with responsive, pixel-perfect UI built for a major Japanese company.",
     longDescription:
       "Contributed to the frontend development of Taiheiyo Cement’s recruitment website. Focused on implementing a responsive, pixel-perfect user interface based on detailed design specifications. Worked closely with designers to ensure high visual fidelity, smooth interactions, and cross-browser compatibility. Maintained clean, scalable code and ensured the site met modern web accessibility and performance standards.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/taiheiyo.png",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
     github: "#",
     demo: "https://recruit.taiheiyo-c.co.jp/",
     featured: false,
-    isContribution: true
+    isContribution: true,
+    isPrivate: false
   },
   {
     id: 5,
@@ -64,12 +67,13 @@ const projects = [
     description: "Educational platform UI enhancements for a language school in Tokyo.",
     longDescription:
       "Contributed to frontend UI development for TSSchool, a Japanese language school’s online platform. Collaborated with designers to implement responsive, user-friendly interfaces across student, curriculum, and dashboard modules. Focused on pixel-perfect design, accessibility, and cross-browser consistency to elevate the user experience for both students and administrators.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/toshin.jpg",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Wordpress", "Pixel Perfect"],
     github: "#",
     demo: "https://tsschool.co.jp/",
     featured: false,
-    isContribution: true
+    isContribution: true,
+    isPrivate: false
   },
   {
     id: 6,
@@ -77,12 +81,13 @@ const projects = [
     description: "Corporate HR platform with clean, accessible UI for enterprise users.",
     longDescription:
       "Worked on frontend UI development for Oneterrace’s HR Solution platform, a corporate system designed to streamline HR operations. Contributed to building responsive, user-friendly interfaces based on design specifications, focusing on clean layouts, consistent styling, and cross-device compatibility. Collaborated closely with the design team to ensure pixel-perfect implementation and a polished user experience across different modules.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/hroneterrace.png",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
     github: "#",
     demo: "https://hrsolution.oneterrace.jp/",
     featured: false,
-    isContribution: true
+    isContribution: true,
+    isPrivate: false
   }
 ]
 
@@ -105,13 +110,13 @@ function ProjectCard({
       onMouseEnter={onHover}
       onMouseLeave={onLeave}
     >
-      <div className="relative">
+      <div className="relative overflow-hidden">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           width={400}
           height={300}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110 overflow-hidden"
         />
 
         {/* Glassmorphism Overlay */}
@@ -177,12 +182,15 @@ function ProjectCard({
             Code
           </Button>
           <Button
+            disabled={project.isPrivate}
             size="sm"
             className={`flex-1 bg-gradient-to-r ${filter === "isContribution" ? "from-green-500 to-teal-600" : "from-blue-500 to-purple-600"} 
             ${filter === "isContribution" ? "hover:from-green-600 hover:to-teal-700" : "hover:from-blue-600 hover:to-purple-700"}`}
           >
-            <Eye className="w-4 h-4 mr-1" />
-            Demo
+          <a href={!project.isPrivate ? project.demo : "#"} target="_blank" className="flex flex-row items-center">
+            {project.isPrivate ? <LockIcon className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
+            {project.isPrivate ? "Private" : "Demo"}
+          </a>
           </Button>
         </div>
       </CardContent>
