@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react"
+import { Mail, Phone, MapPin, Send, Github, Linkedin, Facebook } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -78,27 +78,27 @@ export default function Contact() {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@example.com",
-      href: "mailto:alex@example.com",
+      value: "ericlimmm115@gmail.com",
+      href: "mailto:ericlimmm115@gmail.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+66623859061",
+      href: "tel:+66623859061",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Thailand",
       href: "#",
     },
   ]
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Github, href: "https://github.com/ThaungThanHan", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/thaung-than-h-658b57118/", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/jackson.linn.39/", label: "Facebook" },
   ]
 
   return (
@@ -125,6 +125,7 @@ export default function Contact() {
                 <div className="space-y-4">
                   {contactInfo.map(({ icon: Icon, label, value, href }) => (
                     <a
+                      target="_blank"
                       key={label}
                       href={href}
                       className="flex items-center space-x-4 p-4 rounded-lg bg-gray-50 dark:bg-slate-700/50 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all duration-300 transform hover:scale-105"
@@ -146,6 +147,7 @@ export default function Contact() {
                   <div className="flex space-x-4">
                     {socialLinks.map(({ icon: Icon, href, label }) => (
                       <a
+                        target="_blank"
                         key={label}
                         href={href}
                         className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white hover:shadow-lg transition-all duration-300 transform hover:scale-110"

@@ -12,15 +12,15 @@ const techStack = [
   { name: "Python", color: "bg-blue-500" },
   { name: "PostgreSQL", color: "bg-blue-700" },
   { name: "MongoDB", color: "bg-green-500" },
-  { name: "AWS", color: "bg-orange-500" },
+  { name: "Firebase", color: "bg-orange-500" },
   { name: "Docker", color: "bg-blue-400" },
 ]
 
 const stats = [
-  { icon: Calendar, label: "Years Experience", value: "5+" },
-  { icon: Code, label: "Projects Completed", value: "50+" },
-  { icon: Coffee, label: "Cups of Coffee", value: "1000+" },
-  { icon: Users, label: "Happy Clients", value: "25+" },
+  { icon: Calendar, label: "Years Experience", value: "2+" },
+  // { icon: Code, label: "Projects Completed", value: "50+" },
+  // { icon: Coffee, label: "Cups of Coffee", value: "1000+" },
+  // { icon: Users, label: "Happy Clients", value: "25+" },
 ]
 
 export default function About() {
@@ -30,7 +30,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Passionate developer with a love for creating innovative solutions
+            Full stack developer who finds joy in building complete, end-to-end applications that bring ideas to life.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function About() {
           <div className="space-y-6">
             <Card className="p-8 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Hello, I'm Alex Johnson</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Hello, I'm Thaung Than Han</h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                   I'm a passionate full-stack developer with over 5 years of experience building scalable web
                   applications. I love turning complex problems into simple, beautiful, and intuitive solutions. When
@@ -47,8 +47,8 @@ export default function About() {
                   enjoying a good cup of coffee.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  My expertise spans across modern JavaScript frameworks, cloud technologies, and database design. I
-                  believe in writing clean, maintainable code and creating exceptional user experiences.
+                  With expertise in modern JavaScript frameworks, cloud technologies, and database design, 
+                  I go beyond writing clean, maintainable code—I focus on architecting scalable, user-centric systems. I take pride in planning solutions end-to-end, ensuring not only technical soundness but also a seamless user experience.
                 </p>
               </CardContent>
             </Card>
@@ -95,10 +95,8 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Journey</h3>
                 <div className="space-y-4">
                   {[
-                    { year: "2019", event: "Started as Junior Developer" },
-                    { year: "2021", event: "Promoted to Full Stack Developer" },
-                    { year: "2023", event: "Lead Developer at Tech Startup" },
-                    { year: "2024", event: "Freelance & Consulting" },
+                    { year: "2021", event: "Started as Junior Developer, mainly working on frontend" },
+                    { year: "2023", event: "Grew into Full Stack Developer" },
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-4">
                       <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">

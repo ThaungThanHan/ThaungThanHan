@@ -9,76 +9,81 @@ import Image from "next/image"
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.",
+    title: "Voting App",
+    description: "Real-time voting platform where users can host or join rooms and cast votes securely.",
     longDescription:
-      "Built with Next.js, TypeScript, and Stripe. Features include user authentication, product catalog, shopping cart, order management, and real-time inventory tracking.",
+      "A fullstack voting application built in my free time to sharpen skills in modern web development. Users can create voting rooms, join via unique room codes, and vote once per session. Built using Next.js, TypeScript, and PostgreSQL, with real-time updates and responsive design. Includes user authentication and session control to ensure fair voting.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind", "Socket.io"],
     github: "#",
-    demo: "#",
+    demo: "https://hanvotingapp.vercel.app/",
     featured: true,
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "Collaborative project management tool with real-time updates and team collaboration features.",
+    title: "JP-MIRAI Platform",
+    description: "Fullstack development for a multilingual support platform serving foreign workers in Japan.",
     longDescription:
-      "React-based application with drag-and-drop functionality, real-time collaboration using WebSockets, and comprehensive project tracking.",
+      "Worked on both frontend and backend development for JP-MIRAI, a government-supported web platform that provides guidance and resources to foreign workers in Japan. Contributed to building and maintaining the Admin Dashboard and User Portal. Responsibilities included implementing multilingual UI components, integrating backend APIs, resolving bugs, and enhancing overall platform performance and accessibility. Actively participated in ongoing feature development, maintenance, and cross-team collaboration to ensure a stable and inclusive digital experience.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["React", "Node.js", "Socket.io", "MongoDB", "Material-UI"],
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Figma", "i18n", "REST API"],
     github: "#",
-    demo: "#",
-    featured: true,
+    demo: "https://portal.jp-mirai.org/en",
+    featured: false,
+    isContribution: true
   },
   {
     id: 3,
-    title: "Weather Dashboard",
-    description: "Beautiful weather application with location-based forecasts and interactive maps.",
+    title: "One Japanese - One Terrace",
+    description: "Full-featured learning management system with video lessons, quizzes, and multi-role dashboards.",
     longDescription:
-      "Vue.js application integrating multiple weather APIs, featuring interactive maps, detailed forecasts, and location-based weather alerts.",
+      "Contributed to the development of 'One Japanese', an internal Learning Management System (LMS) designed to facilitate language learning through video lessons and interactive quizzes. The platform includes dedicated dashboards for students, organizations, and managers, each with tailored functionality. Worked across both frontend and backend to implement user interfaces, manage course content, and build features for tracking progress, managing users, and maintaining system stability.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Vue.js", "Weather API", "Mapbox", "Chart.js"],
+    tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "LMS", "REST API"],
     github: "#",
-    demo: "#",
+    demo: "Private/Internal",
     featured: false,
+    isContribution: true
   },
   {
     id: 4,
-    title: "Social Media Analytics",
-    description: "Analytics dashboard for social media performance tracking and insights.",
+    title: "Taiheiyo Cement Recruitment Site",
+    description: "Corporate recruitment site with responsive, pixel-perfect UI built for a major Japanese company.",
     longDescription:
-      "Python-based analytics platform with data visualization, automated reporting, and social media API integrations.",
+      "Contributed to the frontend development of Taiheiyo Cement’s recruitment website. Focused on implementing a responsive, pixel-perfect user interface based on detailed design specifications. Worked closely with designers to ensure high visual fidelity, smooth interactions, and cross-browser compatibility. Maintained clean, scalable code and ensured the site met modern web accessibility and performance standards.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Python", "Django", "D3.js", "PostgreSQL", "Redis"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
     github: "#",
-    demo: "#",
+    demo: "https://recruit.taiheiyo-c.co.jp/",
     featured: false,
+    isContribution: true
   },
   {
     id: 5,
-    title: "AI Chat Assistant",
-    description: "Intelligent chatbot with natural language processing and context awareness.",
+    title: "Toshin School",
+    description: "Educational platform UI enhancements for a language school in Tokyo.",
     longDescription:
-      "AI-powered chat application using OpenAI API, featuring context-aware conversations, file uploads, and integration capabilities.",
+      "Contributed to frontend UI development for TSSchool, a Japanese language school’s online platform. Collaborated with designers to implement responsive, user-friendly interfaces across student, curriculum, and dashboard modules. Focused on pixel-perfect design, accessibility, and cross-browser consistency to elevate the user experience for both students and administrators.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["Next.js", "OpenAI", "Prisma", "WebSockets"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Wordpress", "Pixel Perfect"],
     github: "#",
-    demo: "#",
-    featured: true,
+    demo: "https://tsschool.co.jp/",
+    featured: false,
+    isContribution: true
   },
   {
     id: 6,
-    title: "Fitness Tracker",
-    description: "Mobile-responsive fitness tracking app with workout plans and progress monitoring.",
+    title: "HR Solution – Oneterrace",
+    description: "Corporate HR platform with clean, accessible UI for enterprise users.",
     longDescription:
-      "React Native application with workout tracking, progress visualization, social features, and integration with fitness devices.",
+      "Worked on frontend UI development for Oneterrace’s HR Solution platform, a corporate system designed to streamline HR operations. Contributed to building responsive, user-friendly interfaces based on design specifications, focusing on clean layouts, consistent styling, and cross-device compatibility. Collaborated closely with the design team to ensure pixel-perfect implementation and a polished user experience across different modules.",
     image: "/placeholder.svg?height=300&width=400",
-    tags: ["React Native", "Firebase", "Chart.js", "Redux"],
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
     github: "#",
-    demo: "#",
+    demo: "https://hrsolution.oneterrace.jp/",
     featured: false,
-  },
+    isContribution: true
+  }
 ]
 
 function ProjectCard({
@@ -86,11 +91,13 @@ function ProjectCard({
   isHovered,
   onHover,
   onLeave,
+  filter,
 }: {
   project: (typeof projects)[0]
   isHovered: boolean
   onHover: () => void
   onLeave: () => void
+  filter: "all" | "featured" | "isContribution"
 }) {
   return (
     <Card
@@ -139,7 +146,12 @@ function ProjectCard({
         {/* Featured Badge */}
         {project.featured && (
           <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
-            Featured
+            Personal
+          </div>
+        )}
+        {project.isContribution && (
+          <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+            Contribution
           </div>
         )}
       </div>
@@ -166,7 +178,8 @@ function ProjectCard({
           </Button>
           <Button
             size="sm"
-            className="flex-1 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"
+            className={`flex-1 bg-gradient-to-r ${filter === "isContribution" ? "from-green-500 to-teal-600" : "from-blue-500 to-purple-600"} 
+            ${filter === "isContribution" ? "hover:from-green-600 hover:to-teal-700" : "hover:from-blue-600 hover:to-purple-700"}`}
           >
             <Eye className="w-4 h-4 mr-1" />
             Demo
@@ -179,9 +192,10 @@ function ProjectCard({
 
 export default function Projects() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
-  const [filter, setFilter] = useState<"all" | "featured">("all")
+  const [filter, setFilter] = useState<"all" | "featured" | "isContribution">("all")
 
-  const filteredProjects = filter === "featured" ? projects.filter((p) => p.featured) : projects
+  const filteredProjects = filter === "featured" ? projects.filter((p) => p.featured) : 
+  filter === "isContribution" ? projects.filter((p) => p.isContribution) : projects
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -206,7 +220,14 @@ export default function Projects() {
               onClick={() => setFilter("featured")}
               className={filter === "featured" ? "bg-gradient-to-r from-blue-500 to-purple-600" : ""}
             >
-              Featured
+              Personal
+            </Button>
+            <Button
+              variant={filter === "isContribution" ? "default" : "outline"}
+              onClick={() => setFilter("isContribution")}
+              className={filter === "isContribution" ? "bg-gradient-to-r from-green-500 to-teal-600" : ""}
+            >
+              Contributions
             </Button>
           </div>
         </div>
@@ -219,6 +240,7 @@ export default function Projects() {
               isHovered={hoveredProject === project.id}
               onHover={() => setHoveredProject(project.id)}
               onLeave={() => setHoveredProject(null)}
+              filter={project.isContribution ? "isContribution" : "all"}
             />
           ))}
         </div>
@@ -226,14 +248,16 @@ export default function Projects() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-gray-600 dark:text-gray-300 mb-6">Want to see more of my work?</p>
-          <Button
-            size="lg"
-            variant="outline"
-            className="px-8 py-3 rounded-full border-2 hover:bg-gray-50 dark:hover:bg-slate-800 bg-transparent"
-          >
-            <Github className="w-5 h-5 mr-2" />
-            View All on GitHub
-          </Button>
+          <a href="https://github.com/ThaungThanHan?tab=overview&from=2025-07-01&to=2025-07-17" target="_blank">
+            <Button
+              size="lg"
+              variant="outline"
+              className="px-8 py-3 rounded-full border-2 hover:bg-gray-50 dark:hover:bg-slate-800 bg-transparent"
+            >
+              <Github className="w-5 h-5 mr-2" />
+              View All on GitHub
+            </Button>
+          </a>
         </div>
       </div>
     </section>

@@ -6,61 +6,34 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "TechCorp Solutions",
-    location: "San Francisco, CA",
+    title: "Remote Software Engineer",
+    company: "One Terrace",
+    location: "Tokyo, Japan",
     period: "2023 - Present",
     description:
-      "Leading development of scalable web applications using React, Node.js, and AWS. Mentoring junior developers and architecting microservices solutions.",
+      "Contributing across the full development stack—frontend, backend, and system architecture—for diverse projects spanning multiple industries and clients. Play an active role in designing scalable systems, delivering new features, and ensuring long-term maintainability. Frequently entrusted with technically challenging tasks requiring creative problem-solving and deep cross-functional collaboration.",
     achievements: [
-      "Increased application performance by 40%",
-      "Led team of 5 developers",
-      "Implemented CI/CD pipeline reducing deployment time by 60%",
+      "Delivered end-to-end features in high-impact, production-grade applications",
+      "Participated in architecture discussions and system design for scalable solutions",
+      "Resolved complex technical challenges under tight deadlines",
+      "Maintained and enhanced legacy systems while integrating new capabilities"
     ],
-    technologies: ["React", "Node.js", "AWS", "TypeScript", "PostgreSQL"],
+    technologies: ["React", "Nest.js", "PostgreSQL", "MySQL", "Docker", "Redis", "AWS"],
   },
   {
-    title: "Full Stack Developer",
-    company: "StartupXYZ",
-    location: "Austin, TX",
-    period: "2021 - 2023",
+    title: "Remote Frontend Developer",
+    company: "Pedagogy",
+    location: "Singapore",
+    period: "2021 - 2022",
     description:
-      "Developed and maintained multiple client projects using modern web technologies. Collaborated with design team to create pixel-perfect user interfaces.",
+      "Led frontend development for a comprehensive school management system, delivering robust and user-friendly interfaces using cutting-edge web technologies. The platform supported features such as student and teacher user management, attendance tracking, scheduling/calendar, integrated chat, and video conferencing tools. Worked closely with designers to craft pixel-perfect UI, ensuring seamless user experiences across web and mobile platforms.",
     achievements: [
-      "Built 15+ client projects from scratch",
-      "Reduced bug reports by 50% through comprehensive testing",
-      "Implemented responsive design across all projects",
+      "Rapid development of multiple high-impact features from concept to deployment",
+      "Collaborated effectively in an agile, cross-functional team",
+      "Successfully delivered a functional prototype",
     ],
-    technologies: ["Vue.js", "Python", "Django", "MongoDB", "Docker"],
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency Pro",
-    location: "Remote",
-    period: "2020 - 2021",
-    description:
-      "Specialized in creating responsive and interactive user interfaces. Worked closely with UX designers to implement modern design systems.",
-    achievements: [
-      "Improved website loading speed by 35%",
-      "Created reusable component library",
-      "Achieved 98% client satisfaction rate",
-    ],
-    technologies: ["React", "JavaScript", "Sass", "Webpack", "Figma"],
-  },
-  {
-    title: "Junior Web Developer",
-    company: "WebDev Studio",
-    location: "New York, NY",
-    period: "2019 - 2020",
-    description:
-      "Started my professional journey building websites and learning modern development practices. Gained experience in both frontend and backend technologies.",
-    achievements: [
-      "Completed 20+ website projects",
-      "Learned 5 new programming languages",
-      'Received "Rising Star" award',
-    ],
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-  },
+    technologies: ["React", "React Native", "Figma", "Adobe XD"],
+  }
 ]
 
 function ExperienceCard({
@@ -79,14 +52,6 @@ function ExperienceCard({
       }`}
       style={{ transitionDelay: `${index * 200}ms` }}
     >
-      {/* Timeline */}
-      <div className="flex flex-col items-center">
-        <div className="w-4 h-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full border-4 border-white dark:border-slate-900 shadow-lg" />
-        {index < experiences.length - 1 && (
-          <div className="w-0.5 h-32 bg-gradient-to-b from-blue-500 to-purple-600 mt-2" />
-        )}
-      </div>
-
       {/* Content */}
       <Card className="flex-1 mb-8 bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
         <CardContent className="p-6">

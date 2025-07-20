@@ -14,12 +14,6 @@ export default function Footer() {
     { name: "Contact", href: "#contact" },
   ]
 
-  const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-  ]
-
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
     if (element) {
@@ -33,22 +27,10 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Thaung Than Han</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Full Stack Developer passionate about creating innovative solutions and exceptional user experiences.
+              Let's connect! Available for collaborations and business opportunities.
             </p>
-            <div className="flex space-x-4">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  className="w-10 h-10 bg-gray-100 dark:bg-slate-800 rounded-full flex items-center justify-center text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-600 hover:text-white transition-all duration-300 transform hover:scale-110"
-                  aria-label={label}
-                >
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -71,9 +53,9 @@ export default function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Get In Touch</h4>
             <div className="space-y-2 text-gray-600 dark:text-gray-300">
-              <p>alex@example.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>ericlimmm115@gmail.com</p>
+              <p>+66623859061</p>
+              <p>Thailand</p>
             </div>
           </div>
         </div>
@@ -82,8 +64,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-300 text-sm flex items-center">
-              © {currentYear} Alex Johnson. Made with <Heart className="w-4 h-4 text-red-500 mx-1" />
-              and lots of coffee.
+              © {currentYear} Thaung Than Han. Made with <Heart className="w-4 h-4 text-red-500 mx-1" />
             </p>
             <p className="text-gray-600 dark:text-gray-300 text-sm">Built with Next.js & Tailwind CSS</p>
           </div>

@@ -10,22 +10,22 @@ const skillCategories = [
       { name: "React/Next.js", level: 95 },
       { name: "TypeScript", level: 90 },
       { name: "Tailwind CSS", level: 88 },
-      { name: "Vue.js", level: 75 },
+      { name: "Flutter", level: 75 },
     ],
   },
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", level: 92 },
-      { name: "Python", level: 85 },
-      { name: "Express.js", level: 90 },
-      { name: "GraphQL", level: 80 },
+      { name: "Nest.js", level: 92 },
+      { name: "Node.js", level: 85 },
+      { name: "Adonis.js", level: 90 },
+      { name: "Java", level: 80 },
     ],
   },
   {
     title: "Database",
     skills: [
-      { name: "PostgreSQL", level: 88 },
+      { name: "SQL", level: 88 },
       { name: "MongoDB", level: 85 },
       { name: "Redis", level: 75 },
       { name: "Prisma", level: 82 },
@@ -131,17 +131,12 @@ export default function Skills() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "Git",
-              "GitHub Actions",
-              "Vercel",
-              "Netlify",
               "Figma",
-              "Jest",
-              "Cypress",
-              "Webpack",
-              "Vite",
-              "Sass",
-              "Material-UI",
-              "Chakra UI",
+              "Canva",
+              "Vercel",
+              "React-native",
+              "Microservices",
+              "Sass"
             ].map((tech) => (
               <span
                 key={tech}

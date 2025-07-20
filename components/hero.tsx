@@ -64,8 +64,7 @@ export default function Hero() {
               Full Stack Developer
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Crafting digital experiences with modern technologies. Passionate about clean code, innovative solutions,
-              and bringing ideas to life.
+              Creating digital wonders with pixels and code.
             </p>
           </div>
 
@@ -90,11 +89,12 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 pt-8">
             {[
-              { icon: Github, href: "#", label: "GitHub" },
-              { icon: Linkedin, href: "#", label: "LinkedIn" },
-              { icon: Mail, href: "#", label: "Email" },
+              { icon: Github, href: "https://github.com/ThaungThanHan", label: "GitHub" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/thaung-than-h-658b57118/", label: "LinkedIn" },
+              { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=ericlimmm115@gmail.com&su=&body=", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
+                target="_blank"
                 key={label}
                 href={href}
                 className="p-3 rounded-full bg-white/10 dark:bg-slate-800/50 backdrop-blur-sm border border-white/20 dark:border-slate-700 hover:bg-white/20 dark:hover:bg-slate-700/50 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
