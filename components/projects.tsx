@@ -17,7 +17,8 @@ const projects = [
     github: "#",
     demo: "https://hanvotingapp.vercel.app/",
     featured: true,
-    isPrivate: false
+    isPrivate: false,
+    hasCode: true
   },
   {
     id: 2,
@@ -31,7 +32,8 @@ const projects = [
     demo: "https://portal.jp-mirai.org/en",
     featured: false,
     isContribution: true,
-    isPrivate: false
+    isPrivate: false,
+    hasCode: false
   },
   {
     id: 3,
@@ -45,7 +47,8 @@ const projects = [
     demo: "Private/Internal",
     featured: false,
     isContribution: true,
-    isPrivate: true
+    isPrivate: true,
+    hasCode: false,
   },
   {
     id: 4,
@@ -59,7 +62,8 @@ const projects = [
     demo: "https://recruit.taiheiyo-c.co.jp/",
     featured: false,
     isContribution: true,
-    isPrivate: false
+    isPrivate: false,
+    hasCode: false
   },
   {
     id: 5,
@@ -73,7 +77,8 @@ const projects = [
     demo: "https://tsschool.co.jp/",
     featured: false,
     isContribution: true,
-    isPrivate: false
+    isPrivate: false,
+    hasCode: false
   },
   {
     id: 6,
@@ -87,7 +92,8 @@ const projects = [
     demo: "https://hrsolution.oneterrace.jp/",
     featured: false,
     isContribution: true,
-    isPrivate: false
+    isPrivate: false,
+    hasCode: false
   }
 ]
 
@@ -177,17 +183,20 @@ function ProjectCard({
         </div>
 
         <div className="flex space-x-3">
+          {project.hasCode &&
           <Button variant="outline" size="sm" className="flex-1 bg-transparent">
             <Github className="w-4 h-4 mr-1" />
             Code
           </Button>
+          }
           <Button
             disabled={project.isPrivate}
             size="sm"
             className={`flex-1 bg-gradient-to-r ${filter === "isContribution" ? "from-green-500 to-teal-600" : "from-blue-500 to-purple-600"} 
             ${filter === "isContribution" ? "hover:from-green-600 hover:to-teal-700" : "hover:from-blue-600 hover:to-purple-700"}`}
           >
-          <a href={!project.isPrivate ? project.demo : "#"} target="_blank" className="flex flex-row items-center">
+          <a href={!project.isPrivate ? project.demo : "#"} target="_blank" className="flex flex-row items-center w-full
+          h-full justify-center">
             {project.isPrivate ? <LockIcon className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
             {project.isPrivate ? "Private" : "Demo"}
           </a>

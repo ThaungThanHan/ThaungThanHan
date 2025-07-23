@@ -49,13 +49,16 @@ export default function Hero() {
           <div className="relative mx-auto w-48 h-48 mb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full animate-spin-slow" />
             <div className="absolute inset-2 bg-white dark:bg-slate-900 rounded-full" />
+            <div className="absolute inset-3 rounded-full">
             <Image
-              src="/placeholder.svg?height=176&width=176"
+              src="/images/myself.jpg"
               alt="Developer Profile"
-              width={176}
-              height={176}
-              className="absolute inset-4 rounded-full object-cover"
+              width={0}
+              height={0}
+              className=" w-full h-full object-cotain rounded-full"
             />
+            </div>
+
           </div>
 
           {/* Main Headline */}
