@@ -2,12 +2,14 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { Mail, Phone, MapPin, Send, Github, Linkedin, Facebook } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import * as emailjs from "@emailjs/browser"
+import { toast } from 'react-toastify';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,7 +20,7 @@ export default function Contact() {
   })
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
-
+  const form = useRef(null)
   const validateForm = () => {
     const newErrors: Record<string, string> = {}
 
@@ -45,7 +47,16 @@ export default function Contact() {
     setErrors(newErrors)
     return Object.keys(newErrors).length === 0
   }
-
+  const sendEmail = async (e: React.FormEvent) => {
+      e.preventDefault();
+      emailjs.sendForm(process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID!,process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE_ID!, form.current!,
+        process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY!,)
+      .then(res=>{
+          toast.success("Message sent successfully!")
+      }).catch(e=>{
+          toast.error("Message failed to send")
+      })
+    }
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -54,14 +65,11 @@ export default function Contact() {
     setIsSubmitting(true)
 
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await sendEmail(e)
 
     // Reset form
     setFormData({ name: "", email: "", subject: "", message: "" })
     setIsSubmitting(false)
-
-    // Show success message (you could use a toast library here)
-    alert("Message sent successfully!")
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -167,7 +175,7 @@ export default function Contact() {
             <CardContent className="p-0">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Message</h3>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <Input
