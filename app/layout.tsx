@@ -6,26 +6,12 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Alex Johnson - Full Stack Developer",
+  title: "Thaung Than Han - Full Stack Developer",
   description:
-    "Passionate full stack developer specializing in React, Node.js, and modern web technologies. Creating innovative solutions and exceptional user experiences.",
+    "Creating digital wonders with pixels and code.",
   keywords: "full stack developer, react, node.js, typescript, web development, portfolio",
-  authors: [{ name: "Alex Johnson" }],
-  creator: "Alex Johnson",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://alexjohnson.dev",
-    title: "Alex Johnson - Full Stack Developer",
-    description: "Passionate full stack developer creating innovative solutions",
-    siteName: "Alex Johnson Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Alex Johnson - Full Stack Developer",
-    description: "Passionate full stack developer creating innovative solutions",
-    creator: "@alexjohnsondev",
-  },
+  authors: [{ name: "Thaung Than Han" }],
+  creator: "Thaung Than Han",
   robots: {
     index: true,
     follow: true,
