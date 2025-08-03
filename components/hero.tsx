@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-
 export default function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
 
@@ -17,10 +16,10 @@ export default function Hero() {
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" })
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects")
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: "smooth" })
     }
   }
 
@@ -76,10 +75,11 @@ export default function Hero() {
             <Button
               size="lg"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              onClick={() => scrollToAbout()}
+              onClick={() => scrollToProjects()}
             >
               View My Work
             </Button>
+            <a href="/files/Thaung_ThanHan_Resume.pdf" download>
             <Button
               variant="outline"
               size="lg"
@@ -87,6 +87,7 @@ export default function Hero() {
             >
               Download Resume
             </Button>
+            </a>
           </div>
 
           {/* Social Links */}
@@ -112,7 +113,7 @@ export default function Hero() {
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <button
-            onClick={scrollToAbout}
+            onClick={scrollToProjects}
             className="p-2 rounded-full bg-white/10 dark:bg-slate-800/50 backdrop-blur-sm border border-white/20 dark:border-slate-700 hover:bg-white/20 dark:hover:bg-slate-700/50 transition-all duration-300"
           >
             <ChevronDown className="w-6 h-6 text-gray-700 dark:text-gray-300" />
