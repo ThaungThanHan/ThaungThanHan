@@ -4,6 +4,7 @@
 
 ### 📌 &nbsp;**Top Repositories**
 I have built tons of demo projects for training purposes and the ones below are my favorites - 
+- [Baobei-AI](https://khunhan.itch.io/baobeiai) - An AI-powered virtual cat that lives on your desktop and keeps you company while you work.
 - [HanVotingApp Client](https://github.com/ThaungThanHan/votingclient) - Frontend client for HanVotingApp. Simple and straightforward design to showcase my coding capabilities in fullstack environment. 
 - [HanVotingApp Server](https://github.com/ThaungThanHan/votingserver) - Server app for HanVotingApp. It has a lot of features, starting from user management, CRUD operations to fool-proof voting mechanism which allows users to create their own rooms with candidates and invite others to cast a vote.
  
