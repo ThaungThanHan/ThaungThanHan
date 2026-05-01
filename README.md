@@ -2,9 +2,20 @@
 
 <p>Welcome! </br> I am Thaung Than Han, fullstack developer, living in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/> I love to spend hours on solving puzzles and making my brain sweat. That's why I am here to contribute in open source projects.</p>
 
-### 📌 &nbsp;**Top Repositories**
+### 📌 &nbsp;**Top Projects**
 I have built tons of demo projects for training purposes and the ones below are my favorites - 
-- [Baobei-AI](https://khunhan.itch.io/baobeiai) - An AI-powered virtual cat that lives on your desktop and keeps you company while you work.
+
+# WDTM (What Does This Mean?) 🧠
+
+[![Website](https://img.shields.io/badge/Website-wdtm.site-blue)](https://wdtm.site)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://chromewebstore.google.com/detail/wdtm/mjppafenopgehbhkfojcflhphoblhaok)
+
+**Understand anything instantly.** 
+
+WDTM is a browser extension designed to decode the web's densest text. Whether you are parsing heavy academic journals, confusing AWS documentation, or complex legal terms, WDTM acts as your frictionless AI reading companion. 
+
+Simply highlight the text, and WDTM reads the surrounding DOM context to give you a highly accurate, situational explanation right at your cursor. No sidebars, no new tabs, no lost focus.
+
 - [HanVotingApp Client](https://github.com/ThaungThanHan/votingclient) - Frontend client for HanVotingApp. Simple and straightforward design to showcase my coding capabilities in fullstack environment. 
 - [HanVotingApp Server](https://github.com/ThaungThanHan/votingserver) - Server app for HanVotingApp. It has a lot of features, starting from user management, CRUD operations to fool-proof voting mechanism which allows users to create their own rooms with candidates and invite others to cast a vote.
  
