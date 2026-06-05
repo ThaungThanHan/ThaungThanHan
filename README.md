@@ -3,7 +3,13 @@
 <p>Welcome! </br> I am Thaung Than Han, fullstack developer, living in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/> I love to spend hours on solving puzzles and making my brain sweat. That's why I am here to contribute in open source projects.</p>
 
 ### 📌 &nbsp;**Top Projects**
-I have built tons of demo projects for training purposes and the ones below are my favorites - 
+I love building tools that have real use-cases on everyday life - 
+
+### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
+
+** TTS Plugin for Your Hermes Agent **
+
+OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
 
 ### [WDTM](https://wdtm.site)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://chromewebstore.google.com/detail/wdtm/mjppafenopgehbhkfojcflhphoblhaok)
