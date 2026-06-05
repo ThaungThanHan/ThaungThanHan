@@ -7,7 +7,7 @@ I love building tools that have real use-cases on everyday life -
 
 ### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
 
-** TTS Plugin for Your Hermes Agent **
+**TTS Plugin for Your Hermes Agent**
 
 OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
 
