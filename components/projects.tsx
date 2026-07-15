@@ -1,206 +1,208 @@
 "use client"
 
 import { useState } from "react"
-import { ExternalLink, Github, Eye, LockIcon } from "lucide-react"
+import { Github, Eye, LockIcon } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
-const projects = [
+
+type ProjectFilter = "all" | "personal" | "contribution"
+
+type Project = {
+  id: number
+  title: string
+  description: string
+  longDescription: string
+  image: string
+  tags: string[]
+  demo: string
+  featured: boolean
+  isContribution: boolean
+  isPrivate: boolean
+}
+
+const projects: Project[] = [
   {
     id: 1,
-    title: "Voting App",
-    description: "Real-time voting platform where users can host or join rooms and cast votes securely.",
+    title: "WDTM: Explain Texts and Images",
+    description: "Chrome extension that explains selected text, images and whole page directly in the browser.",
     longDescription:
-      "A fullstack voting application built in my free time to sharpen skills in modern web development. Users can create voting rooms, join via unique room codes, and vote once per session. Built using Next.js, TypeScript, and PostgreSQL, with real-time updates and responsive design. Includes user authentication and session control to ensure fair voting.",
-    image: "/images/voting_app.png",
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind", "Socket.io"],
-    github: "#",
-    demo: "https://hanvotingapp.vercel.app/",
+      "Built an AI-powered Chrome extension that explains selected text and images directly within the current webpage, helping users understand unfamiliar content without interrupting their browsing flow.",
+    image: "/images/WDTM.png",
+    tags: ["Chrome Extension", "AI", "TypeScript", "React", "Browser APIs"],
+    demo: "https://chromewebstore.google.com/detail/wdtm-explain-texts-and-im/mjppafenopgehbhkfojcflhphoblhaok",
     featured: true,
-    isPrivate: false,
-    hasCode: true
+    isContribution: false,
+    isPrivate: false
   },
   {
     id: 2,
-    title: "JP-MIRAI Platform",
-    description: "Fullstack development for a multilingual support platform serving foreign workers in Japan.",
+    title: "Hermes OmniVoice",
+    description: "Open-source Hermes Agent plugin for local multilingual text-to-speech with OmniVoice.",
     longDescription:
-      "Worked on both frontend and backend development for JP-MIRAI, a government-supported web platform that provides guidance and resources to foreign workers in Japan. Contributed to building and maintaining the Admin Dashboard and User Portal. Responsibilities included implementing multilingual UI components, integrating backend APIs, resolving bugs, and enhancing overall platform performance and accessibility. Actively participated in ongoing feature development, maintenance, and cross-team collaboration to ensure a stable and inclusive digital experience.",
-    image: "/images/jpmirai.png",
-    tags: ["React", "Node.js", "Express", "PostgreSQL", "Figma", "i18n", "REST API"],
-    github: "#",
-    demo: "https://portal.jp-mirai.org/en",
-    featured: false,
-    isContribution: true,
-    isPrivate: false,
-    hasCode: false
+      "Built and launched a Python plugin that registers an k2-fsa/OmniVoice TTS provider for Hermes, supporting voice cloning, voice design, and config-driven speech generation.",
+    image: "/images/omnivoice.jpeg",
+    tags: ["Python", "Hermes", "OmniVoice", "TTS", "Open Source"],
+    demo: "https://github.com/ThaungThanHan/hermes-omnivoice",
+    featured: true,
+    isContribution: false,
+    isPrivate: false
   },
   {
     id: 3,
+    title: "JP-MIRAI Platform",
+    description: "Fullstack development for a multilingual support platform serving foreign workers in Japan.",
+    longDescription:
+      "Contributed across the admin dashboard and user portal, building multilingual UI, integrating backend APIs, resolving bugs, and improving platform stability and accessibility.",
+    image: "/images/jpmirai.png",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Figma", "i18n", "REST API"],
+    demo: "https://portal.jp-mirai.org/en",
+    featured: false,
+    isContribution: true,
+    isPrivate: false
+  },
+  {
+    id: 4,
     title: "One Japanese - One Terrace",
     description: "Full-featured learning management system with video lessons, quizzes, and multi-role dashboards.",
     longDescription:
-      "Contributed to the development of 'One Japanese', an internal Learning Management System (LMS) designed to facilitate language learning through video lessons and interactive quizzes. The platform includes dedicated dashboards for students, organizations, and managers, each with tailored functionality. Worked across both frontend and backend to implement user interfaces, manage course content, and build features for tracking progress, managing users, and maintaining system stability.",
+      "Helped build an internal LMS with video lessons, quizzes, progress tracking, course management, and tailored dashboards for students, organizations, and managers.",
     image: "/images/oneterrace.webp",
     tags: ["React", "Node.js", "PostgreSQL", "Tailwind", "LMS", "REST API"],
-    github: "#",
     demo: "Private/Internal",
     featured: false,
     isContribution: true,
     isPrivate: true,
-    hasCode: false,
-  },
-  {
-    id: 4,
-    title: "Taiheiyo Cement Recruitment Site",
-    description: "Corporate recruitment site with responsive, pixel-perfect UI built for a major Japanese company.",
-    longDescription:
-      "Contributed to the frontend development of Taiheiyo Cement’s recruitment website. Focused on implementing a responsive, pixel-perfect user interface based on detailed design specifications. Worked closely with designers to ensure high visual fidelity, smooth interactions, and cross-browser compatibility. Maintained clean, scalable code and ensured the site met modern web accessibility and performance standards.",
-    image: "/images/taiheiyo.png",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
-    github: "#",
-    demo: "https://recruit.taiheiyo-c.co.jp/",
-    featured: false,
-    isContribution: true,
-    isPrivate: false,
-    hasCode: false
   },
   {
     id: 5,
-    title: "Toshin School",
-    description: "Educational platform UI enhancements for a language school in Tokyo.",
+    title: "Taiheiyo Cement Recruitment Site",
+    description: "Corporate recruitment site with responsive, pixel-perfect UI built for a major Japanese company.",
     longDescription:
-      "Contributed to frontend UI development for TSSchool, a Japanese language school’s online platform. Collaborated with designers to implement responsive, user-friendly interfaces across student, curriculum, and dashboard modules. Focused on pixel-perfect design, accessibility, and cross-browser consistency to elevate the user experience for both students and administrators.",
-    image: "/images/toshin.jpg",
-    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Wordpress", "Pixel Perfect"],
-    github: "#",
-    demo: "https://tsschool.co.jp/",
+      "Implemented responsive recruitment pages from detailed design specs, focusing on visual fidelity, smooth interactions, accessibility, and cross-browser consistency.",
+    image: "/images/taiheiyo.png",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
+    demo: "https://recruit.taiheiyo-c.co.jp/",
     featured: false,
     isContribution: true,
-    isPrivate: false,
-    hasCode: false
+    isPrivate: false
   },
   {
     id: 6,
+    title: "Toshin School",
+    description: "Educational platform UI enhancements for a language school in Tokyo.",
+    longDescription:
+      "Delivered responsive UI improvements across student, curriculum, and dashboard modules with a focus on pixel-perfect implementation and accessible user flows.",
+    image: "/images/toshin.jpg",
+    tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Wordpress", "Pixel Perfect"],
+    demo: "https://tsschool.co.jp/",
+    featured: false,
+    isContribution: true,
+    isPrivate: false
+  },
+  {
+    id: 7,
     title: "HR Solution – Oneterrace",
     description: "Corporate HR platform with clean, accessible UI for enterprise users.",
     longDescription:
-      "Worked on frontend UI development for Oneterrace’s HR Solution platform, a corporate system designed to streamline HR operations. Contributed to building responsive, user-friendly interfaces based on design specifications, focusing on clean layouts, consistent styling, and cross-device compatibility. Collaborated closely with the design team to ensure pixel-perfect implementation and a polished user experience across different modules.",
+      "Built responsive HR platform interfaces from design specs, improving layout consistency, cross-device behavior, and the overall polish of enterprise workflows.",
     image: "/images/hroneterrace.png",
     tags: ["HTML", "CSS", "JavaScript", "Responsive Design", "Pixel Perfect", "Accessibility"],
-    github: "#",
     demo: "https://hrsolution.oneterrace.jp/",
     featured: false,
     isContribution: true,
-    isPrivate: false,
-    hasCode: false
+    isPrivate: false
   }
 ]
 
 function ProjectCard({
   project,
-  isHovered,
-  onHover,
-  onLeave,
   filter,
 }: {
-  project: (typeof projects)[0]
-  isHovered: boolean
-  onHover: () => void
-  onLeave: () => void
-  filter: "all" | "featured" | "isContribution"
+  project: Project
+  filter: ProjectFilter
 }) {
+  const accentGradient = project.isContribution ? "from-green-500 to-teal-600" : "from-blue-500 to-purple-600"
+  const accentHover = project.isContribution ? "hover:from-green-600 hover:to-teal-700" : "hover:from-blue-600 hover:to-purple-700"
+
   return (
     <Card
-      className="group relative overflow-hidden bg-white dark:bg-slate-800 border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
-      onMouseEnter={onHover}
-      onMouseLeave={onLeave}
+      className="group relative flex h-full flex-col overflow-hidden border-0 bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl dark:bg-slate-800"
     >
-      <div className="relative overflow-hidden">
+      <div className="relative h-56 overflow-hidden bg-slate-100 dark:bg-slate-900">
         <Image
           src={project.image || "/placeholder.svg"}
           alt={project.title}
           width={400}
           height={300}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110 overflow-hidden"
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-
-        {/* Glassmorphism Overlay */}
-        <div
-          className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent backdrop-blur-sm transition-opacity duration-300 ${
-            isHovered ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <div className="absolute bottom-4 left-4 right-4 text-white">
-            <p className="text-sm leading-relaxed">{project.longDescription}</p>
-            <div className="flex space-x-2 mt-3">
-              <Button
-                size="sm"
-                variant="secondary"
-                className="bg-white/20 hover:bg-white/30 text-white border-white/30"
-              >
-                <Github className="w-4 h-4 mr-1" />
-                Code
-              </Button>
-              <Button
-                size="sm"
-                variant="secondary"
-                className="bg-white/20 hover:bg-white/30 text-white border-white/30"
-              >
-                <ExternalLink className="w-4 h-4 mr-1" />
-                Demo
-              </Button>
-            </div>
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/55 to-transparent" />
+        <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between gap-3">
+          <div className="min-w-0">
+            <p className="text-xs font-medium uppercase tracking-wide text-white/75">
+              {project.featured ? "Personal Project" : "Client Contribution"}
+            </p>
+            <h3 className="truncate text-lg font-bold text-white drop-shadow-sm">{project.title}</h3>
           </div>
+          {project.isPrivate ? (
+            <span className="inline-flex shrink-0 items-center rounded-full bg-white/20 px-3 py-1 text-xs font-semibold text-white backdrop-blur-md">
+              <LockIcon className="mr-1 h-3.5 w-3.5" />
+              Private
+            </span>
+          ) : (
+           <></>
+          )}
         </div>
 
-        {/* Featured Badge */}
         {project.featured && (
-          <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+          <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
             Personal
           </div>
         )}
         {project.isContribution && (
-          <div className="absolute top-4 right-4 bg-gradient-to-r from-green-500 to-teal-600 text-white px-3 py-1 rounded-full text-xs font-medium">
+          <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-green-500 to-teal-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
             Contribution
           </div>
         )}
       </div>
 
-      <CardContent className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">{project.description}</p>
+      <CardContent className="flex flex-1 flex-col p-6">
+        <div className="mb-5 space-y-3">
+          {/* <h3 className="text-xl font-bold leading-tight text-gray-900 dark:text-white">{project.title}</h3> */}
+          <p className="text-base leading-relaxed text-gray-600 dark:text-gray-300">{project.description}</p>
+          <p className="line-clamp-4 text-sm leading-6 text-gray-500 dark:text-gray-400">{project.longDescription}</p>
+        </div>
 
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="mb-6 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-md text-xs font-medium"
+              className="rounded-md bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700 dark:bg-blue-900/30 dark:text-blue-300"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="flex space-x-3">
-          {project.hasCode &&
-          <Button variant="outline" size="sm" className="flex-1 bg-transparent">
-            <Github className="w-4 h-4 mr-1" />
-            Code
-          </Button>
-          }
-          <Button
-            disabled={project.isPrivate}
-            size="sm"
-            className={`flex-1 bg-gradient-to-r ${filter === "isContribution" ? "from-green-500 to-teal-600" : "from-blue-500 to-purple-600"} 
-            ${filter === "isContribution" ? "hover:from-green-600 hover:to-teal-700" : "hover:from-blue-600 hover:to-purple-700"}`}
-          >
-          <a href={!project.isPrivate ? project.demo : "#"} target="_blank" className="flex flex-row items-center w-full
-          h-full justify-center">
-            {project.isPrivate ? <LockIcon className="w-4 h-4 mr-1" /> : <Eye className="w-4 h-4 mr-1" />}
-            {project.isPrivate ? "Private" : "Demo"}
-          </a>
-          </Button>
+        <div className="mt-auto flex gap-3">
+          {project.isPrivate ? (
+            <Button disabled size="sm" className="flex-1 bg-gradient-to-r from-emerald-300 to-teal-300 text-white">
+              <LockIcon className="h-4 w-4" />
+              Private
+            </Button>
+          ) : (
+            <Button
+              asChild
+              size="sm"
+              className={`flex-1 bg-gradient-to-r ${filter === "contribution" ? "from-green-500 to-teal-600" : accentGradient} ${filter === "contribution" ? "hover:from-green-600 hover:to-teal-700" : accentHover}`}
+            >
+              <a href={project.demo} target="_blank" rel="noreferrer">
+                <Eye className="h-4 w-4" />
+                Visit
+              </a>
+            </Button>
+          )}
         </div>
       </CardContent>
     </Card>
@@ -208,11 +210,13 @@ function ProjectCard({
 }
 
 export default function Projects() {
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
-  const [filter, setFilter] = useState<"all" | "featured" | "isContribution">("all")
+  const [filter, setFilter] = useState<ProjectFilter>("all")
 
-  const filteredProjects = filter === "featured" ? projects.filter((p) => p.featured) : 
-  filter === "isContribution" ? projects.filter((p) => p.isContribution) : projects
+  const filteredProjects = projects.filter((project) => {
+    if (filter === "personal") return project.featured
+    if (filter === "contribution") return project.isContribution
+    return true
+  })
 
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
@@ -224,25 +228,31 @@ export default function Projects() {
           </p>
 
           {/* Filter Buttons */}
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-wrap justify-center gap-3">
             <Button
+              type="button"
               variant={filter === "all" ? "default" : "outline"}
+              aria-pressed={filter === "all"}
               onClick={() => setFilter("all")}
               className={filter === "all" ? "bg-gradient-to-r from-blue-500 to-purple-600" : ""}
             >
               All Projects
             </Button>
             <Button
-              variant={filter === "featured" ? "default" : "outline"}
-              onClick={() => setFilter("featured")}
-              className={filter === "featured" ? "bg-gradient-to-r from-blue-500 to-purple-600" : ""}
+              type="button"
+              variant={filter === "personal" ? "default" : "outline"}
+              aria-pressed={filter === "personal"}
+              onClick={() => setFilter("personal")}
+              className={filter === "personal" ? "bg-gradient-to-r from-blue-500 to-purple-600" : ""}
             >
               Personal
             </Button>
             <Button
-              variant={filter === "isContribution" ? "default" : "outline"}
-              onClick={() => setFilter("isContribution")}
-              className={filter === "isContribution" ? "bg-gradient-to-r from-green-500 to-teal-600" : ""}
+              type="button"
+              variant={filter === "contribution" ? "default" : "outline"}
+              aria-pressed={filter === "contribution"}
+              onClick={() => setFilter("contribution")}
+              className={filter === "contribution" ? "bg-gradient-to-r from-green-500 to-teal-600" : ""}
             >
               Contributions
             </Button>
@@ -254,10 +264,7 @@ export default function Projects() {
             <ProjectCard
               key={project.id}
               project={project}
-              isHovered={hoveredProject === project.id}
-              onHover={() => setHoveredProject(project.id)}
-              onLeave={() => setHoveredProject(null)}
-              filter={project.isContribution ? "isContribution" : "all"}
+              filter={filter}
             />
           ))}
         </div>

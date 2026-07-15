@@ -6,27 +6,42 @@ import { Card, CardContent } from "@/components/ui/card"
 
 const experiences = [
   {
-    title: "Remote Software Engineer",
-    company: "One Terrace",
-    location: "Tokyo, Japan",
-    period: "2023 - Present",
+    title: "Test Automation Engineer Intern",
+    company: "KASIKORN Business-Technology Group (KBTG)",
+    location: "Bangkok, Thailand",
+    period: "2026 - Present",
     description:
-      "Contributing across the full development stack—frontend, backend, and system architecture—for diverse projects spanning multiple industries and clients. Play an active role in designing scalable systems, delivering new features, and ensuring long-term maintainability. Frequently entrusted with technically challenging tasks requiring creative problem-solving and deep cross-functional collaboration.",
+      "Supporting test automation for the K PLUS mobile banking application by developing and maintaining Maestro test scripts for Android user flows. Focused on making regression testing more repeatable, reliable, and easier to maintain across application updates.",
+    achievements: [
+      "Automated key K PLUS user flows, reducing repetitive manual testing effort",
+      "Improved regression-test consistency by creating reusable and maintainable Maestro scripts",
+      "Identified application and test-flow issues early, helping reduce the risk of defects reaching later testing stages",
+      "Collaborated with the testing team to translate test scenarios into reliable automated checks"
+    ],
+    technologies: ["Maestro", "Mobile App"],
+  },
+  {
+    title: "Full-stack Software Engineer",
+    company: "One Terrace, Japan",
+    location: "Remote",
+    period: "2023 - 2026",
+    description:
+      "Contributed to client-facing and enterprise web applications for Japanese organizations, including JP-MIRAI and KPMG Japan. Worked across frontend, backend, APIs, authentication, database changes, and production support, with a strong focus on reliability, maintainability, and minimal disruption to live services.",
     achievements: [
       "Delivered end-to-end features in high-impact, production-grade applications",
       "Participated in architecture discussions and system design for scalable solutions",
       "Resolved complex technical challenges under tight deadlines",
       "Maintained and enhanced legacy systems while integrating new capabilities"
     ],
-    technologies: ["React", "Nest.js", "PostgreSQL", "MySQL", "Docker", "Redis", "AWS"],
+    technologies: ["Typescript", "PostgreSQL", "MySQL", "Docker", "Redis", "AWS"],
   },
   {
-    title: "Remote Frontend Developer",
-    company: "Pedagogy",
-    location: "Singapore",
+    title: "Frontend Developer",
+    company: "Pedagogy, Singapore",
+    location: "Remote",
     period: "2021 - 2022",
     description:
-      "Led frontend development for a comprehensive school management system, delivering robust and user-friendly interfaces using cutting-edge web technologies. The platform supported features such as student and teacher user management, attendance tracking, scheduling/calendar, integrated chat, and video conferencing tools. Worked closely with designers to craft pixel-perfect UI, ensuring seamless user experiences across web and mobile platforms.",
+      "Contributed to frontend development for a comprehensive school management system, delivering robust and user-friendly interfaces using cutting-edge web technologies. The platform supported features such as student and teacher user management, attendance tracking, scheduling/calendar, integrated chat, and video conferencing tools. Worked closely with designers to craft pixel-perfect UI, ensuring seamless user experiences across web and mobile platforms.",
     achievements: [
       "Rapid development of multiple high-impact features from concept to deployment",
       "Collaborated effectively in an agile, cross-functional team",

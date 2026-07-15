@@ -17,7 +17,7 @@ const techStack = [
 ]
 
 const stats = [
-  { icon: Calendar, label: "Years Experience", value: "2+" },
+  { icon: Calendar, label: "Years Experience", value: "3.5+" },
   // { icon: Code, label: "Projects Completed", value: "50+" },
   // { icon: Coffee, label: "Cups of Coffee", value: "1000+" },
   // { icon: Users, label: "Happy Clients", value: "25+" },
@@ -41,14 +41,11 @@ export default function About() {
               <CardContent className="p-0">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Hello, I'm Thaung Than Han</h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  I'm a passionate full-stack developer with over 5 years of experience building scalable web
-                  applications. I love turning complex problems into simple, beautiful, and intuitive solutions. When
-                  I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or
-                  enjoying a good cup of coffee.
-                </p>
+                  I’m a full-stack software engineer with over 3.5 years of professional experience building reliable, client-facing web applications. I have contributed to enterprise products for Japanese organizations and worked across frontend, backend, testing, and deployment.                </p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                  I enjoy building products that solve real problems and create meaningful value for users. Alongside my professional work, I develop AI-powered applications, browser extensions, and open-source tools, with a strong focus on usability, reliability, and maintainability.                </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  With expertise in modern JavaScript frameworks, cloud technologies, and database design, 
-                  I go beyond writing clean, maintainable code—I focus on architecting scalable, user-centric systems. I take pride in planning solutions end-to-end, ensuring not only technical soundness but also a seamless user experience.
+                  When I’m not coding, you’ll find me exploring new technologies, contributing to open-source projects, or enjoying a good cup of coffee. :D              
                 </p>
               </CardContent>
             </Card>
@@ -95,11 +92,12 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Journey</h3>
                 <div className="space-y-4">
                   {[
-                    { year: "2021", event: "Started as Junior Developer, mainly working on frontend" },
-                    { year: "2023", event: "Grew into Full Stack Developer" },
+                    { year: "2021", event: "Began my professional career in frontend development" },
+                    { year: "2023", event: "Expanded into full-stack engineerng, building client-facing products at One Terrace" },
+                    { year: "2026", event: "Joined KBTG for enterprise test automation and published my first computer-vision research paper at JCSSE"}
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-4">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                      <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
                         {item.year}
                       </div>
                       <div className="text-gray-700 dark:text-gray-300">{item.event}</div>
