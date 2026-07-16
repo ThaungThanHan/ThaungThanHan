@@ -40,7 +40,7 @@ const projects: Project[] = [
     title: "Hermes OmniVoice",
     description: "Open-source Hermes Agent plugin for local multilingual text-to-speech with OmniVoice.",
     longDescription:
-      "Built and launched a Python plugin that registers an k2-fsa/OmniVoice TTS provider for Hermes, supporting voice cloning, voice design, and config-driven speech generation.",
+      "Built a Python plugin that integrates the k2-fsa OmniVoice TTS provider with Hermes, supporting voice cloning, voice design, and configuration-driven speech generation.",
     image: "/images/omnivoice.jpeg",
     tags: ["Python", "Hermes", "OmniVoice", "TTS", "Open Source"],
     demo: "https://github.com/ThaungThanHan/hermes-omnivoice",

@@ -93,8 +93,8 @@ export default function About() {
                 <div className="space-y-4">
                   {[
                     { year: "2021", event: "Began my professional career in frontend development" },
-                    { year: "2023", event: "Expanded into full-stack engineerng, building client-facing products at One Terrace" },
-                    { year: "2026", event: "Joined KBTG for enterprise test automation and published my first computer-vision research paper at JCSSE"}
+                    { year: "2023", event: "Expanded into full-stack engineering, building client-facing products at One Terrace" },
+                    { year: "2026", event: "Joined KBTG for enterprise test automation and had my first computer-vision research paper accepted at JCSSE"}
                   ].map((item, index) => (
                     <div key={index} className="flex items-center space-x-4">
                       <div className="w-12 h-12 flex-shrink-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">

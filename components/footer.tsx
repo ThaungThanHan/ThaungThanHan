@@ -11,6 +11,7 @@ export default function Footer() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
+    { name: "Achievements", href: "#achievements" },
     { name: "Contact", href: "#contact" },
   ]
 
@@ -54,7 +55,6 @@ export default function Footer() {
             <h4 className="text-lg font-semibold text-gray-900 dark:text-white">Get In Touch</h4>
             <div className="space-y-2 text-gray-600 dark:text-gray-300">
               <p>ericlimmm115@gmail.com</p>
-              <p>+66623859061</p>
               <p>Thailand</p>
             </div>
           </div>
@@ -66,7 +66,6 @@ export default function Footer() {
             <p className="text-gray-600 dark:text-gray-300 text-sm flex items-center">
               © {currentYear} Thaung Than Han. Made with <Heart className="w-4 h-4 text-red-500 mx-1" />
             </p>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">Built with Next.js & Tailwind CSS</p>
           </div>
         </div>
       </div>

@@ -18,7 +18,13 @@ const experiences = [
       "Identified application and test-flow issues early, helping reduce the risk of defects reaching later testing stages",
       "Collaborated with the testing team to translate test scenarios into reliable automated checks"
     ],
-    technologies: ["Maestro", "Mobile App"],
+    technologies: [
+      "Maestro",
+      "YAML",
+      "Android",
+      "Git",
+      "Mobile Test Automation"
+    ]
   },
   {
     title: "Full-stack Software Engineer",
@@ -28,10 +34,10 @@ const experiences = [
     description:
       "Contributed to client-facing and enterprise web applications for Japanese organizations, including JP-MIRAI and KPMG Japan. Worked across frontend, backend, APIs, authentication, database changes, and production support, with a strong focus on reliability, maintainability, and minimal disruption to live services.",
     achievements: [
-      "Delivered end-to-end features in high-impact, production-grade applications",
-      "Participated in architecture discussions and system design for scalable solutions",
-      "Resolved complex technical challenges under tight deadlines",
-      "Maintained and enhanced legacy systems while integrating new capabilities"
+      "Delivered end-to-end features that improved essential workflows across client-facing products",
+      "Resolved production issues while minimizing disruption to live services and users",
+      "Modernized legacy functionality while preserving system stability during releases",
+      "Translated complex client requirements into reliable, production-ready solutions"
     ],
     technologies: ["Typescript", "PostgreSQL", "MySQL", "Docker", "Redis", "AWS"],
   },

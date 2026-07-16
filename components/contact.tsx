@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useRef, useState } from "react"
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Facebook } from "lucide-react"
+import { Mail, MapPin, Send, Github, Linkedin, Facebook, Twitter } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -90,12 +90,6 @@ export default function Contact() {
       href: "mailto:ericlimmm115@gmail.com",
     },
     {
-      icon: Phone,
-      label: "Phone",
-      value: "+66623859061",
-      href: "tel:+66623859061",
-    },
-    {
       icon: MapPin,
       label: "Location",
       value: "Thailand",
@@ -106,6 +100,7 @@ export default function Contact() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/ThaungThanHan", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/thaung-than-h-658b57118/", label: "LinkedIn" },
+    { icon: Twitter, href: "https://x.com/sonofguanyin", label: "X" },
     { icon: Facebook, href: "https://www.facebook.com/jackson.linn.39/", label: "Facebook" },
   ]
 

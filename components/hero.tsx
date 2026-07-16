@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ChevronDown, Github, Linkedin, Mail } from "lucide-react"
+import { ChevronDown, Github, Linkedin, Mail, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 export default function Hero() {
@@ -66,7 +66,7 @@ export default function Hero() {
               Full Stack Developer
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Creating digital wonders with pixels and code.
+              Building web and mobile products, exploring AI, and creating tools that make life a little easier.
             </p>
           </div>
 
@@ -95,6 +95,7 @@ export default function Hero() {
             {[
               { icon: Github, href: "https://github.com/ThaungThanHan", label: "GitHub" },
               { icon: Linkedin, href: "https://www.linkedin.com/in/thaung-than-h-658b57118/", label: "LinkedIn" },
+              { icon: Twitter, href: "https://x.com/sonofguanyin", label: "X" },
               { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=ericlimmm115@gmail.com&su=&body=", label: "Email" },
             ].map(({ icon: Icon, href, label }) => (
               <a
