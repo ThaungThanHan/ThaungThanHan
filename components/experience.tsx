@@ -45,7 +45,7 @@ const experiences = [
     title: "Frontend Developer",
     company: "Pedagogy, Singapore",
     location: "Remote",
-    period: "2021 - 2022",
+    period: "2021 - 2023",
     description:
       "Contributed to frontend development for a comprehensive school management system, delivering robust and user-friendly interfaces using cutting-edge web technologies. The platform supported features such as student and teacher user management, attendance tracking, scheduling/calendar, integrated chat, and video conferencing tools. Worked closely with designers to craft pixel-perfect UI, ensuring seamless user experiences across web and mobile platforms.",
     achievements: [
