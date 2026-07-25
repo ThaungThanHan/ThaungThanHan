@@ -79,7 +79,7 @@ export default function Hero() {
             >
               View My Work
             </Button>
-            <a href="/files/Thaung_ThanHan_Resume.pdf" download>
+            <a href="/files/ZiChengLin_resume.pdf" download>
             <Button
               variant="outline"
               size="lg"
