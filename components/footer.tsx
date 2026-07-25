@@ -28,7 +28,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Thaung Than Han</h3>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Zi-cheng Lin · Thaung Than Han</h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Let's connect! Available for collaborations and business opportunities.
             </p>
@@ -64,7 +64,7 @@ export default function Footer() {
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 dark:text-gray-300 text-sm flex items-center">
-              © {currentYear} Thaung Than Han. Made with <Heart className="w-4 h-4 text-red-500 mx-1" />
+              © {currentYear} Zi-cheng Lin/Thaung Than Han. Made with <Heart className="w-4 h-4 text-red-500 mx-1" />
             </p>
           </div>
         </div>

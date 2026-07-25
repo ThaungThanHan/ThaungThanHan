@@ -6,12 +6,12 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Thaung Than Han - Full Stack Developer",
+  title: "Zi-cheng Lin - Full Stack Developer",
   description:
     "Creating digital wonders with pixels and code.",
   keywords: "full stack developer, react, node.js, typescript, web development, portfolio",
-  authors: [{ name: "Thaung Than Han" }],
-  creator: "Thaung Than Han",
+  authors: [{ name: "Zi-cheng Lin · Thaung Than Han" }],
+  creator: "Zi-cheng Lin · Thaung Than Han",
   robots: {
     index: true,
     follow: true,

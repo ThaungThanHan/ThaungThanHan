@@ -39,7 +39,7 @@ export default function About() {
           <div className="space-y-6">
             <Card className="p-8 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-0">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Hello, I'm Thaung Than Han</h3>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Hello, I'm Zi-cheng Lin · Thaung Than Han</h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                   I’m a full-stack software engineer with over 3.5 years of professional experience building reliable, client-facing web applications. I have contributed to enterprise products for Japanese organizations and worked across frontend, backend, testing, and deployment.                </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
