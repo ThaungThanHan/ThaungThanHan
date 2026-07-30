@@ -19,21 +19,23 @@ type Project = {
   featured: boolean
   isContribution: boolean
   isPrivate: boolean
+  isLive?: boolean
 }
 
 const projects: Project[] = [
   {
-    id: 1,
-    title: "WDTM: Explain Texts and Images",
-    description: "Chrome extension that explains selected text, images and whole page directly in the browser.",
+    id: 8,
+    title: "KrungJob",
+    description: "A searchable job and internship platform built from opportunities shared across Facebook groups in Thailand.",
     longDescription:
-      "Built an AI-powered Chrome extension that explains selected text and images directly within the current webpage, helping users understand unfamiliar content without interrupting their browsing flow.",
-    image: "/images/WDTM.png",
-    tags: ["Chrome Extension", "AI", "TypeScript", "React", "Browser APIs"],
-    demo: "https://chromewebstore.google.com/detail/wdtm-explain-texts-and-im/mjppafenopgehbhkfojcflhphoblhaok",
+      "Transformed crawled Facebook posts into structured, searchable job listings with automated categorization, bilingual discovery, and direct links to original sources.",
+    image: "/images/krungjob.png",
+    tags: ["Job Board", "Search", "Thailand", "Web App", "Personal Project"],
+    demo: "https://krungjob.online/",
     featured: true,
     isContribution: false,
-    isPrivate: false
+    isPrivate: false,
+    isLive: true
   },
   {
     id: 2,
@@ -46,7 +48,22 @@ const projects: Project[] = [
     demo: "https://github.com/ThaungThanHan/hermes-omnivoice",
     featured: true,
     isContribution: false,
-    isPrivate: false
+    isPrivate: false,
+    isLive: true
+  },
+  {
+    id: 1,
+    title: "WDTM: Explain Texts and Images",
+    description: "Chrome extension that explains selected text, images and whole page directly in the browser.",
+    longDescription:
+      "Built an AI-powered Chrome extension that explains selected text and images directly within the current webpage, helping users understand unfamiliar content without interrupting their browsing flow.",
+    image: "/images/WDTM.png",
+    tags: ["Chrome Extension", "AI", "TypeScript", "React", "Browser APIs"],
+    demo: "https://chromewebstore.google.com/detail/wdtm-explain-texts-and-im/mjppafenopgehbhkfojcflhphoblhaok",
+    featured: true,
+    isContribution: false,
+    isPrivate: false,
+    isLive: true
   },
   {
     id: 3,
@@ -155,16 +172,23 @@ function ProjectCard({
           )}
         </div>
 
-        {project.featured && (
-          <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-            Personal
-          </div>
-        )}
-        {project.isContribution && (
-          <div className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-green-500 to-teal-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
-            Contribution
-          </div>
-        )}
+        <div className="absolute right-4 top-4 flex flex-wrap justify-end gap-2">
+          {project.featured && (
+            <div className="rounded-full bg-gradient-to-r from-blue-500 to-purple-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+              Personal
+            </div>
+          )}
+          {project.isContribution && (
+            <div className="rounded-full bg-gradient-to-r from-green-500 to-teal-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+              Contribution
+            </div>
+          )}
+          {project.isLive && (
+            <div className="rounded-full bg-gradient-to-r from-emerald-500 to-green-600 px-3 py-1 text-xs font-semibold text-white shadow-lg">
+              Live
+            </div>
+          )}
+        </div>
       </div>
 
       <CardContent className="flex flex-1 flex-col p-6">
