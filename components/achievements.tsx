@@ -1,4 +1,4 @@
-import { Award, CalendarCheck, FileText, Sparkles } from "lucide-react"
+import { Award, CalendarCheck, ExternalLink, FileText, Sparkles } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const achievements = [
@@ -8,7 +8,8 @@ const achievements = [
     type: "Research Publication",
     date: "2026",
     description:
-      "Compared five image segmentation techniques under pendulum and vibration conditions to assess their reliability for real-world mango inspection and agricultural computer vision.",
+      "Published as Thaung Than Han. Compared five image segmentation techniques under pendulum and vibration conditions to assess their reliability for real-world mango inspection and agricultural computer vision.",
+    paperUrl: "https://ieeexplore.ieee.org/document/11596926",
     highlights: [
       "Compared five image segmentation techniques for mango images",
       "Evaluated performance under pendulum and vibration conditions",
@@ -62,6 +63,15 @@ export default function Achievements() {
                         <p className="mt-2 text-lg font-semibold leading-7 text-blue-600 dark:text-blue-300">
                           {achievement.paperTitle}
                         </p>
+                        <a
+                          href={achievement.paperUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-flex items-center gap-2 rounded-md bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:bg-blue-500 dark:hover:bg-blue-400"
+                        >
+                          <ExternalLink className="h-4 w-4" />
+                          View paper
+                        </a>
                         <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">{achievement.description}</p>
                       </div>
 
