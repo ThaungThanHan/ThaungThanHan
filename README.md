@@ -1,15 +1,9 @@
 ### Good Day! <a href="https://www.gautamkrishnar.com/](https://thaungthanhan.github.io/hanportfolio/"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGx1dXZ0bHozdnNlbTVwbzRvYmpqZXg5cG1rMXZxejVxOGtjem53cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ES4Vcv8zWfIt2/giphy.gif" width="8%"></a>
 
-<p>Welcome! </br> I am Zi-cheng Lin/Thaung Than Han, fullstack developer, living in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/> I love to spend hours on solving puzzles and making my brain sweat. That's why I am here to contribute in open source projects.</p>
+I am Zi-cheng Lin/Thaung Than Han, a Full-Stack Software Engineer based in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/>I love building projects, solving tricky problems, and turning ideas into something real. If you’re working on something interesting, feel free to reach out! 🚀</p>
 
 ### 📌 &nbsp;**Top Projects**
 I love building tools that have real use-cases on everyday life - 
-
-### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
-
-**TTS Plugin for Your Hermes Agent**
-
-OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
 
 ### [WDTM](https://wdtm.site)
 [![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://chromewebstore.google.com/detail/wdtm/mjppafenopgehbhkfojcflhphoblhaok)
@@ -20,8 +14,17 @@ WDTM is a browser extension designed to decode the web's densest text. Whether y
 
 Simply highlight the text, and WDTM reads the surrounding DOM context to give you a highly accurate, situational explanation right at your cursor. No sidebars, no new tabs, no lost focus.
 
-### [Baobei-AI](https://khunhan.itch.io/baobeiai) 
-An AI-powered virtual cat that lives on your desktop and keeps you company while you work.
+### [SubExtractor](https://github.com/ThaungThanHan/SubExtractor)
+
+**Extract subtitles with less friction.**
+
+SubExtractor is a utility for pulling subtitle tracks from videos and turning them into clean, usable subtitle files such as SRT.
+
+### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
+
+**TTS Plugin for Your Hermes Agent**
+
+OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
 
 <details>
   <summary><b>💻&nbsp;&nbsp;My comfort coding tools&nbsp;</b></summary>
