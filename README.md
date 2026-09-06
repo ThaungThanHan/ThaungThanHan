@@ -10,7 +10,7 @@ I love building tools that have real use-cases on everyday life -
 
 **Understand anything instantly.** 
 
-WDTM is a browser extension designed to decode the web's densest text. Whether you are parsing heavy academic journals, confusing AWS documentation, or complex legal terms, WDTM acts as your frictionless AI reading companion. 
+WDTM is a Featured, browser extension designed to decode the web's densest text. Whether you are parsing heavy academic journals, confusing AWS documentation, or complex legal terms, WDTM acts as your frictionless AI reading companion. 
 
 Simply highlight the text, and WDTM reads the surrounding DOM context to give you a highly accurate, situational explanation right at your cursor. No sidebars, no new tabs, no lost focus.
 
