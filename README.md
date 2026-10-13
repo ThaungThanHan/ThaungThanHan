@@ -1,6 +1,8 @@
-### Good Day! <a href="https://www.gautamkrishnar.com/](https://thaungthanhan.github.io/hanportfolio/"><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGx1dXZ0bHozdnNlbTVwbzRvYmpqZXg5cG1rMXZxejVxOGtjem53cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ES4Vcv8zWfIt2/giphy.gif" width="8%"></a>
+### Good Day! <a href="https://thaungthanhan.github.io/hanportfolio/"><img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/200w.gif" alt="Cat typing on a laptop" width="80"></a>
 
 I am Zi-cheng Lin/Thaung Than Han, a Full-Stack Software Engineer based in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/>I love building projects, solving tricky problems, and turning ideas into something real. If you’re working on something interesting, feel free to reach out! 🚀</p>
+
+[![Total stars earned across my repositories](https://img.shields.io/github/stars/ThaungThanHan?style=flat-square&logo=github&label=Total%20Stars&color=yellow)](https://github.com/ThaungThanHan?tab=repositories&sort=stargazers)
 
 ### 📌 &nbsp;**Top Projects**
 I love building tools that have real use-cases on everyday life - 
