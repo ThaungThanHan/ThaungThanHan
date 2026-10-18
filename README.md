@@ -16,17 +16,23 @@ WDTM is a Featured, browser extension designed to decode the web's densest text.
 
 Simply highlight the text, and WDTM reads the surrounding DOM context to give you a highly accurate, situational explanation right at your cursor. No sidebars, no new tabs, no lost focus.
 
+### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
+
+**TTS Plugin for Your Hermes Agent**
+
+OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
+
 ### [SubExtractor](https://github.com/ThaungThanHan/SubExtractor)
 
 **Extract subtitles with less friction.**
 
 SubExtractor is a utility for pulling subtitle tracks from videos and turning them into clean, usable subtitle files such as SRT.
 
-### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
+### [Han Agent Skills](https://github.com/ThaungThanHan/han-agent-skills)
 
-**TTS Plugin for Your Hermes Agent**
+**Improving SDLC with self-made AI Agent Skills**
 
-OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
+Agent skills that are good for better understanding codebases, and multi-agent review for the created skills. I hope these skills can help you with your code, feel free to use them.
 
 <details>
   <summary><b>💻&nbsp;&nbsp;My comfort coding tools&nbsp;</b></summary>
