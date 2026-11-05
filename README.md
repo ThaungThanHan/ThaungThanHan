@@ -4,7 +4,7 @@ Full-stack software engineer based in Thailand. I build useful products, work th
 
 - I like turning ideas into practical web apps, browser extensions, and developer tools.
 - I'm happy to talk about full-stack development, testing, and collaboration.
-- Explore more of my work on my [portfolio](https://thaungthanhan.github.io/hanportfolio/).
+- Explore more of my work on my [portfolio](https://thaungthanhan.vercel.app/).
 
 [![Total stars earned across my repositories](https://img.shields.io/github/stars/ThaungThanHan?style=flat-square&logo=github&label=Total%20Stars&color=yellow)](https://github.com/ThaungThanHan?tab=repositories&sort=stargazers)
 
