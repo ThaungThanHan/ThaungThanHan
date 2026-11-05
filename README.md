@@ -1,55 +1,37 @@
-### Good Day! <a href="https://thaungthanhan.github.io/hanportfolio/"><img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/200w.gif" alt="Cat typing on a laptop" width="80"></a>
+# Hi, I'm Zi-cheng Lin (Thaung Than Han)
 
-I am Zi-cheng Lin/Thaung Than Han, a Full-Stack Software Engineer based in Thailand <img src="https://img.icons8.com/?size=512&id=60244&format=png" width="13" /> <br/>I love building projects, solving tricky problems, and turning ideas into something real. If you’re working on something interesting, feel free to reach out! 🚀</p>
+Full-stack software engineer based in Thailand. I build useful products, work through tricky problems, and enjoy contributing to open source.
+
+- I like turning ideas into practical web apps, browser extensions, and developer tools.
+- I'm happy to talk about full-stack development, testing, and collaboration.
+- Explore more of my work on my [portfolio](https://thaungthanhan.github.io/hanportfolio/).
 
 [![Total stars earned across my repositories](https://img.shields.io/github/stars/ThaungThanHan?style=flat-square&logo=github&label=Total%20Stars&color=yellow)](https://github.com/ThaungThanHan?tab=repositories&sort=stargazers)
 
-### 📌 &nbsp;**Top Projects**
-I love building tools that have real use-cases on everyday life - 
+## Launched projects & open-source
 
-### [WDTM](https://wdtm.site)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome-Extension-green)](https://chromewebstore.google.com/detail/wdtm/mjppafenopgehbhkfojcflhphoblhaok)
+- **[WDTM](https://wdtm.site)** — A [Chrome extension](https://chromewebstore.google.com/detail/wdtm/mjppafenopgehbhkfojcflhphoblhaok) that explains selected text and images in the context of the page you're reading.
+- **[YourMUGEN](https://yourmugen.online)** — Build and play MUGEN games right in your browser, backed by the Ikemen GO engine.
+- **[KrungJob](https://krungjob.online/)** — A searchable job and internship platform built from opportunities shared across Facebook groups in Thailand.
+- **[Hermes OmniVoice](https://github.com/ThaungThanHan/hermes-omnivoice)** — An open-source TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
+- **[SubExtractor](https://github.com/ThaungThanHan/SubExtractor)** — A utility for extracting video subtitles into usable files such as SRT.
+- **[Han Agent Skills](https://github.com/ThaungThanHan/han-agent-skills)** — Agent skills for learning codebases and improving software development workflows.
 
-**Understand anything instantly.** 
+## Companies I have worked at
 
-WDTM is a Featured, browser extension designed to decode the web's densest text. Whether you are parsing heavy academic journals, confusing AWS documentation, or complex legal terms, WDTM acts as your frictionless AI reading companion. 
+- **[KASIKORN Business-Technology Group (KBTG)](https://www.kbtg.tech/)** · Test Automation Engineer Intern · 2026–present — Developing Maestro scripts for Android user flows in the K PLUS mobile banking app.
+- **[One Terrace, Japan](https://oneterrace.jp/)** · Full-stack Software Engineer · 2023–2026 — Built and maintained client-facing and enterprise web applications for Japanese organizations.
 
-Simply highlight the text, and WDTM reads the surrounding DOM context to give you a highly accurate, situational explanation right at your cursor. No sidebars, no new tabs, no lost focus.
+## Connect with me
 
-### [hermes-omnivoice](https://github.com/ThaungThanHan/hermes-omnivoice)
-
-**TTS Plugin for Your Hermes Agent**
-
-OmniVoice TTS plugin for Hermes Agent with multilingual speech, voice cloning, and voice design.
-
-### [SubExtractor](https://github.com/ThaungThanHan/SubExtractor)
-
-**Extract subtitles with less friction.**
-
-SubExtractor is a utility for pulling subtitle tracks from videos and turning them into clean, usable subtitle files such as SRT.
-
-### [Han Agent Skills](https://github.com/ThaungThanHan/han-agent-skills)
-
-**Improving SDLC with self-made AI Agent Skills**
-
-Agent skills that are good for better understanding codebases, and multi-agent review for the created skills. I hope these skills can help you with your code, feel free to use them.
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ericlimmm115@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thaung-than-h-658b57118/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ThaungThanHan)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/sonofguanyin)
+[![Facebook](https://img.shields.io/badge/Facebook-0866FF?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/jackson.linn.39/)
 
 <details>
-  <summary><b>💻&nbsp;&nbsp;My comfort coding tools&nbsp;</b></summary>
-  <br/>
-  <img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
-  <img alt="ReactNative" src="https://img.shields.io/badge/-ReactNative-45b8d8?style=flat-square&logo=react&logoColor=white" />
-  <img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" />
-  <img alt="Expressjs" src="https://img.shields.io/badge/-Expressjs-6cc24a?style=flat-square&logo=express&logoColor=white" />
-  <img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" />
-  <img alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-  <img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-  <img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
-  <img alt="redux" src="https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white" />
-  <img alt="javascript" src="https://img.shields.io/badge/-Javascript-yellow?style=flat-square&logo=javascript&logoColor=white" />
-</details>
-<details>
-  <summary><b>🙋🏻‍♂️&nbsp;&nbsp;Find me on&nbsp👇🏻</b></summary>
-  <br/>
- <p><a href="https://www.facebook.com/jackson.linn.39/" target="_blank"><img alt="Facebook" src="https://img.shields.io/badge/facebook-%231DA1F2.svg?&style=for-the-badge&logo=facebook&logoColor=white" /></a> <a href="https://linkedin.com/in/thaung-than-h-658b57118" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <summary><strong>Languages & tools</strong></summary>
+  <br>
+  <p>TypeScript · JavaScript · Python · SQL · HTML · React · React Native · Next.js · Node.js · Express · PostgreSQL · MySQL · MongoDB · Sass · Redux · Docker · Git · AWS · Maestro</p>
 </details>
